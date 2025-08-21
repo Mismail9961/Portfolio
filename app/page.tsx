@@ -1157,7 +1157,7 @@ export default function Portfolio() {
                   </h3>
                 </div>
                 <p className="text-muted-foreground mb-6">
-                  Looking for a senior engineer who can hit the ground running?
+                  Looking for a Full Stack Developer who can hit the ground running?
                   I bring deep expertise in modern tech stacks and a proven
                   track record of delivering results.
                 </p>
@@ -1165,7 +1165,7 @@ export default function Portfolio() {
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-accent rounded-full"></div>
                     <span className="text-sm">
-                      5+ years of full-stack development experience
+                      2+ years of full-stack development experience
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -1177,7 +1177,7 @@ export default function Portfolio() {
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-accent rounded-full"></div>
                     <span className="text-sm">
-                      Specialized in AI, DevOps, and Web3 technologies
+                      Specialized in AI, Python, and Full Stack Development technologies
                     </span>
                   </div>
                   <div className="flex items-center gap-2">

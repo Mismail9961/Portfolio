@@ -1,0 +1,1216 @@
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Progress } from "@/components/ui/progress";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import {
+  ArrowDown,
+  Github,
+  Linkedin,
+  Mail,
+  ExternalLink,
+  Code,
+  Database,
+  Cloud,
+  Cpu,
+  Globe,
+  Shield,
+  Play,
+  Star,
+  Users,
+  Zap,
+  Lightbulb,
+  Target,
+  Rocket,
+  Brain,
+  Quote,
+  Send,
+  MapPin,
+  Calendar,
+  Coffee,
+} from "lucide-react";
+
+export default function Portfolio() {
+  return (
+    <div className="min-h-screen bg-background">
+      {/* Navigation Header */}
+      <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
+        <nav className="container mx-auto px-6 py-4">
+          <div className="flex items-center justify-between">
+            <div className="font-serif font-bold text-xl text-foreground">
+              Sheikh Muhammad Ismail
+            </div>
+            <div className="hidden md:flex items-center space-x-8">
+              <a
+                href="#about"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                About
+              </a>
+              <a
+                href="#projects"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                Projects
+              </a>
+              <a
+                href="#skills"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                Skills
+              </a>
+              <a
+                href="#philosophy"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                Philosophy
+              </a>
+              <a
+                href="#contact"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                Contact
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      {/* Hero Section */}
+      <section className="pt-24 pb-16 px-6">
+        <div className="container mx-auto max-w-6xl">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            {/* Hero Content */}
+            <div className="flex-1 text-center lg:text-left">
+              <div className="mb-6">
+                <Badge variant="secondary" className="mb-4 text-sm font-medium">
+                  Available for new opportunities
+                </Badge>
+                <h1 className="font-serif font-bold text-4xl md:text-6xl lg:text-7xl text-foreground mb-6 leading-tight">
+                  Building the <span className="text-primary">Future</span> of
+                  Technology
+                </h1>
+                <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed max-w-2xl">
+                  Full Stack Engineer specializing in{" "}
+                  <span className="text-accent font-medium">AI</span> and{" "}
+                  <span className="text-accent font-medium">Web3</span>{" "}
+                  technologies. Transforming complex problems into elegant
+                  solutions.
+                </p>
+              </div>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+                <Button size="lg" className="text-lg px-8 py-6">
+                  View My Work
+                  <ArrowDown className="ml-2 h-5 w-5" />
+                </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="text-lg px-8 py-6 bg-transparent"
+                >
+                  Download Resume
+                  <ExternalLink className="ml-2 h-5 w-5" />
+                </Button>
+              </div>
+
+              {/* Social Links */}
+              <div className="flex items-center gap-6 justify-center lg:justify-start">
+                <a
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors p-2"
+                  aria-label="GitHub Profile"
+                >
+                  <Github className="h-6 w-6" />
+                </a>
+                <a
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors p-2"
+                  aria-label="LinkedIn Profile"
+                >
+                  <Linkedin className="h-6 w-6" />
+                </a>
+                <a
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors p-2"
+                  aria-label="Email Contact"
+                >
+                  <Mail className="h-6 w-6" />
+                </a>
+              </div>
+            </div>
+
+            {/* Hero Visual */}
+            <div className="flex-1 w-full max-w-full sm:max-w-lg px-5 sm:px-0">
+              <div className="relative">
+                {/* Animated background elements */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl blur-3xl animate-pulse"></div>
+
+                <div className="relative bg-card border border-border rounded-3xl p-6 sm:p-8 shadow-2xl">
+                  <div className="space-y-4">
+                    {/* Status */}
+                    <div className="flex items-center gap-2 sm:gap-3 text-xs sm:text-sm">
+                      <div className="w-2 h-2 sm:w-3 sm:h-3 bg-primary rounded-full animate-pulse"></div>
+                      <div className="text-muted-foreground font-mono">
+                        Currently coding...
+                      </div>
+                    </div>
+
+                    {/* Code Block */}
+                    <div className="bg-muted rounded-lg p-3 sm:p-4 font-mono text-[10px] sm:text-sm overflow-x-auto">
+                      <div className="text-accent">const</div>
+                      <div className="text-foreground">developer = {"{"}</div>
+                      <div className="ml-3 sm:ml-4 text-muted-foreground">
+                        name:{" "}
+                        <span className="text-primary">
+                          'Sheikh Muhammad Ismail'
+                        </span>
+                        ,
+                      </div>
+                      <div className="ml-3 sm:ml-4 text-muted-foreground">
+                        skills:{" "}
+                        <span className="text-accent">
+                          ['AI', 'Python', 'Web3', 'Web Developer']
+                        </span>
+                        ,
+                      </div>
+                      <div className="ml-3 sm:ml-4 text-muted-foreground">
+                        passion:{" "}
+                        <span className="text-primary">'Innovation'</span>
+                      </div>
+                      <div className="text-foreground">{"}"}</div>
+                    </div>
+
+                    {/* Badges */}
+                    <div className="flex flex-wrap gap-2 text-xs sm:text-sm">
+                      <Badge variant="secondary">TypeScript</Badge>
+                      <Badge variant="secondary">React</Badge>
+                      <Badge variant="secondary">Node.js</Badge>
+                      <Badge variant="secondary">Next.js</Badge>
+                      <Badge variant="secondary">JavaScript</Badge>
+                      <Badge variant="secondary">Express.js</Badge>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Scroll Indicator */}
+      <div className="flex justify-center pb-8">
+        <div className="animate-bounce">
+          <ArrowDown className="h-6 w-6 text-muted-foreground" />
+        </div>
+      </div>
+
+      {/* Skills Section */}
+      <section id="skills" className="py-20 px-6 bg-secondary/30">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="font-serif font-bold text-3xl md:text-4xl text-foreground mb-4">
+              Technical Expertise
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Specialized in cutting-edge technologies across the full
+              development stack
+            </p>
+          </div>
+
+          {/* Skills Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <CardHeader className="text-center pb-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3 group-hover:bg-primary/20 transition-colors">
+                  <Code className="h-6 w-6 text-primary" />
+                </div>
+                <CardTitle className="text-lg font-serif">Frontend</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <div className="space-y-2">
+                  <div className="flex justify-between text-sm">
+                    <span>React/Next.js</span>
+                    <span className="text-muted-foreground">95%</span>
+                  </div>
+                  <Progress value={95} className="h-2" />
+                </div>
+                <div className="space-y-2">
+                  <div className="flex justify-between text-sm">
+                    <span>TailwindCSS/Material UI</span>
+                    <span className="text-muted-foreground">90%</span>
+                  </div>
+                  <Progress value={90} className="h-2" />
+                </div>
+                <div className="space-y-2">
+                  <div className="flex justify-between text-sm">
+                    <span>Redux/Zustand/Framer Motion</span>
+                    <span className="text-muted-foreground">92%</span>
+                  </div>
+                  <Progress value={92} className="h-2" />
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <CardHeader className="text-center pb-4">
+                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mx-auto mb-3 group-hover:bg-accent/20 transition-colors">
+                  <Cpu className="h-6 w-6 text-accent" />
+                </div>
+                <CardTitle className="text-lg font-serif">Backend</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <div className="space-y-2">
+                  <div className="flex justify-between text-sm">
+                    <span>Node.js/Express.js</span>
+                    <span className="text-muted-foreground">94%</span>
+                  </div>
+                  <Progress value={88} className="h-2" />
+                </div>
+                <div className="space-y-2">
+                  <div className="flex justify-between text-sm">
+                    <span>GraphQL/Authentication & Authorization</span>
+                    <span className="text-muted-foreground">95%</span>
+                  </div>
+                  <Progress value={85} className="h-2" />
+                </div>
+                <div className="space-y-2">
+                  <div className="flex justify-between text-sm">
+                    <span>PostgreSQL/MySQL & MongoDB</span>
+                    <span className="text-muted-foreground">90%</span>
+                  </div>
+                  <Progress value={80} className="h-2" />
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <CardHeader className="text-center pb-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3 group-hover:bg-primary/20 transition-colors">
+                  <Cloud className="h-6 w-6 text-primary" />
+                </div>
+                <CardTitle className="text-lg font-serif">
+                  Full-Stack / End-to-End Testing
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <div className="space-y-2">
+                  <div className="flex justify-between text-sm">
+                    <span>Cypress/Playwright</span>
+                    <span className="text-muted-foreground">87%</span>
+                  </div>
+                  <Progress value={87} className="h-2" />
+                </div>
+                <div className="space-y-2">
+                  <div className="flex justify-between text-sm">
+                    <span>Selenium</span>
+                    <span className="text-muted-foreground">83%</span>
+                  </div>
+                  <Progress value={83} className="h-2" />
+                </div>
+                <div className="space-y-2">
+                  <div className="flex justify-between text-sm">
+                    <span>CI/CD</span>
+                    <span className="text-muted-foreground">90%</span>
+                  </div>
+                  <Progress value={90} className="h-2" />
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <CardHeader className="text-center pb-4">
+                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mx-auto mb-3 group-hover:bg-accent/20 transition-colors">
+                  <Globe className="h-6 w-6 text-accent" />
+                </div>
+                <CardTitle className="text-lg font-serif">Python</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <div className="space-y-2">
+                  <div className="flex justify-between text-sm">
+                    <span>Core Python</span>
+                    <span className="text-muted-foreground">88%</span>
+                  </div>
+                  <Progress value={78} className="h-2" />
+                </div>
+                <div className="space-y-2">
+                  <div className="flex justify-between text-sm">
+                    <span>Django</span>
+                    <span className="text-muted-foreground">86%</span>
+                  </div>
+                  <Progress value={82} className="h-2" />
+                </div>
+                <div className="space-y-2">
+                  <div className="flex justify-between text-sm">
+                    <span>Scripting & Automation</span>
+                    <span className="text-muted-foreground">85%</span>
+                  </div>
+                  <Progress value={75} className="h-2" />
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Projects Showcase Section */}
+      <section id="projects" className="py-20 px-6 bg-secondary/30">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="font-serif font-bold text-3xl md:text-4xl text-foreground mb-4">
+              Featured Projects
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Innovative solutions showcasing expertise across AI, Python, and
+              full-stack development
+            </p>
+          </div>
+
+          {/* Projects Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            {/* Project 1 - AI-Powered Analytics */}
+            <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+              <div className="relative overflow-hidden">
+                <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
+                  <div className="text-center">
+                    <Cpu className="h-16 w-16 text-primary mx-auto mb-4" />
+                    <div className="text-sm text-muted-foreground font-mono">
+                      AI Analytics Dashboard
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="flex gap-4">
+                    <Button
+                      size="sm"
+                      variant="secondary"
+                      className="bg-white/90 text-black hover:bg-white"
+                    >
+                      <Play className="h-4 w-4 mr-2" />
+                      Demo
+                    </Button>
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="border-white text-white hover:bg-white hover:text-black bg-transparent"
+                    >
+                      <Github className="h-4 w-4 mr-2" />
+                      Code
+                    </Button>
+                  </div>
+                </div>
+              </div>
+              <CardHeader>
+                <div className="flex items-start justify-between">
+                  <div>
+                    <CardTitle className="font-serif text-xl mb-2">
+                      AI-Powered Analytics Platform
+                    </CardTitle>
+                    <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                      <div className="flex items-center gap-1">
+                        <Star className="h-4 w-4 text-yellow-500" />
+                        <span>124 stars</span>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <Users className="h-4 w-4" />
+                        <span>2.3k users</span>
+                      </div>
+                    </div>
+                  </div>
+                  <Badge
+                    variant="secondary"
+                    className="bg-primary/10 text-primary"
+                  >
+                    Featured
+                  </Badge>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-4">
+                  Enterprise-grade analytics platform leveraging machine
+                  learning for predictive insights. Built with React, Node.js,
+                  and TensorFlow, processing 10M+ data points daily.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <Badge variant="outline">React</Badge>
+                  <Badge variant="outline">TensorFlow</Badge>
+                  <Badge variant="outline">Node.js</Badge>
+                  <Badge variant="outline">PostgreSQL</Badge>
+                  <Badge variant="outline">AWS</Badge>
+                </div>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <Zap className="h-4 w-4 text-accent" />
+                    <span>99.9% uptime</span>
+                  </div>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="text-primary hover:text-primary"
+                  >
+                    Learn More <ExternalLink className="h-4 w-4 ml-1" />
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Project 2 - DeFi Protocol */}
+            <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+              <div className="relative overflow-hidden">
+                <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center">
+                  <div className="text-center">
+                    <Globe className="h-16 w-16 text-accent mx-auto mb-4" />
+                    <div className="text-sm text-muted-foreground font-mono">
+                      DeFi Protocol Interface
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="flex gap-4">
+                    <Button
+                      size="sm"
+                      variant="secondary"
+                      className="bg-white/90 text-black hover:bg-white"
+                    >
+                      <Play className="h-4 w-4 mr-2" />
+                      Demo
+                    </Button>
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="border-white text-white hover:bg-white hover:text-black bg-transparent"
+                    >
+                      <Github className="h-4 w-4 mr-2" />
+                      Code
+                    </Button>
+                  </div>
+                </div>
+              </div>
+              <CardHeader>
+                <div className="flex items-start justify-between">
+                  <div>
+                    <CardTitle className="font-serif text-xl mb-2">
+                      DeFi Yield Farming Protocol
+                    </CardTitle>
+                    <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                      <div className="flex items-center gap-1">
+                        <Star className="h-4 w-4 text-yellow-500" />
+                        <span>89 stars</span>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <Users className="h-4 w-4" />
+                        <span>$2.1M TVL</span>
+                      </div>
+                    </div>
+                  </div>
+                  <Badge
+                    variant="secondary"
+                    className="bg-accent/10 text-accent"
+                  >
+                    Web3
+                  </Badge>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-4">
+                  Decentralized yield farming protocol with automated market
+                  making. Smart contracts audited and deployed on Ethereum
+                  mainnet with $2.1M total value locked.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <Badge variant="outline">Solidity</Badge>
+                  <Badge variant="outline">Web3.js</Badge>
+                  <Badge variant="outline">Next.js</Badge>
+                  <Badge variant="outline">Hardhat</Badge>
+                  <Badge variant="outline">Ethereum</Badge>
+                </div>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <Shield className="h-4 w-4 text-primary" />
+                    <span>Audited</span>
+                  </div>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="text-primary hover:text-primary"
+                  >
+                    Learn More <ExternalLink className="h-4 w-4 ml-1" />
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Project 3 - DevOps Automation */}
+            <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+              <div className="relative overflow-hidden">
+                <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
+                  <div className="text-center">
+                    <Cloud className="h-16 w-16 text-primary mx-auto mb-4" />
+                    <div className="text-sm text-muted-foreground font-mono">
+                      CI/CD Pipeline Dashboard
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="flex gap-4">
+                    <Button
+                      size="sm"
+                      variant="secondary"
+                      className="bg-white/90 text-black hover:bg-white"
+                    >
+                      <Play className="h-4 w-4 mr-2" />
+                      Demo
+                    </Button>
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="border-white text-white hover:bg-white hover:text-black bg-transparent"
+                    >
+                      <Github className="h-4 w-4 mr-2" />
+                      Code
+                    </Button>
+                  </div>
+                </div>
+              </div>
+              <CardHeader>
+                <div className="flex items-start justify-between">
+                  <div>
+                    <CardTitle className="font-serif text-xl mb-2">
+                      Cloud Infrastructure Automation
+                    </CardTitle>
+                    <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                      <div className="flex items-center gap-1">
+                        <Star className="h-4 w-4 text-yellow-500" />
+                        <span>156 stars</span>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <Users className="h-4 w-4" />
+                        <span>50+ teams</span>
+                      </div>
+                    </div>
+                  </div>
+                  <Badge
+                    variant="secondary"
+                    className="bg-primary/10 text-primary"
+                  >
+                    DevOps
+                  </Badge>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-4">
+                  Kubernetes-native CI/CD platform with automated scaling and
+                  monitoring. Reduced deployment time by 80% and improved system
+                  reliability across multiple environments.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <Badge variant="outline">Kubernetes</Badge>
+                  <Badge variant="outline">Docker</Badge>
+                  <Badge variant="outline">Terraform</Badge>
+                  <Badge variant="outline">Prometheus</Badge>
+                  <Badge variant="outline">AWS</Badge>
+                </div>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <Zap className="h-4 w-4 text-accent" />
+                    <span>80% faster deploys</span>
+                  </div>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="text-primary hover:text-primary"
+                  >
+                    Learn More <ExternalLink className="h-4 w-4 ml-1" />
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Project 4 - Open Source Tool */}
+            <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+              <div className="relative overflow-hidden">
+                <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center">
+                  <div className="text-center">
+                    <Code className="h-16 w-16 text-accent mx-auto mb-4" />
+                    <div className="text-sm text-muted-foreground font-mono">
+                      Developer Tool Interface
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="flex gap-4">
+                    <Button
+                      size="sm"
+                      variant="secondary"
+                      className="bg-white/90 text-black hover:bg-white"
+                    >
+                      <Play className="h-4 w-4 mr-2" />
+                      Demo
+                    </Button>
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="border-white text-white hover:bg-white hover:text-black bg-transparent"
+                    >
+                      <Github className="h-4 w-4 mr-2" />
+                      Code
+                    </Button>
+                  </div>
+                </div>
+              </div>
+              <CardHeader>
+                <div className="flex items-start justify-between">
+                  <div>
+                    <CardTitle className="font-serif text-xl mb-2">
+                      React Performance Profiler
+                    </CardTitle>
+                    <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                      <div className="flex items-center gap-1">
+                        <Star className="h-4 w-4 text-yellow-500" />
+                        <span>2.1k stars</span>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <Users className="h-4 w-4" />
+                        <span>15k downloads</span>
+                      </div>
+                    </div>
+                  </div>
+                  <Badge
+                    variant="secondary"
+                    className="bg-accent/10 text-accent"
+                  >
+                    Open Source
+                  </Badge>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-4">
+                  Developer tool for analyzing React application performance
+                  with real-time metrics and optimization suggestions. Featured
+                  in React Weekly and used by 500+ companies.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <Badge variant="outline">React</Badge>
+                  <Badge variant="outline">TypeScript</Badge>
+                  <Badge variant="outline">Webpack</Badge>
+                  <Badge variant="outline">Chrome Extension</Badge>
+                  <Badge variant="outline">NPM</Badge>
+                </div>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <Users className="h-4 w-4 text-primary" />
+                    <span>500+ companies</span>
+                  </div>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="text-primary hover:text-primary"
+                  >
+                    Learn More <ExternalLink className="h-4 w-4 ml-1" />
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* View All Projects CTA */}
+          <div className="text-center">
+            <Button
+              size="lg"
+              variant="outline"
+              className="text-lg px-8 py-6 bg-transparent"
+            >
+              <Github className="mr-2 h-5 w-5" />
+              View All Projects on GitHub
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Philosophy & Insights Section */}
+      <section id="philosophy" className="py-20 px-6">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="font-serif font-bold text-3xl md:text-4xl text-foreground mb-4">
+              Engineering Philosophy
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              The principles and insights that guide my approach to building
+              exceptional software
+            </p>
+          </div>
+
+          {/* Philosophy Cards */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+            {/* Core Philosophy */}
+            <Card className="group hover:shadow-xl transition-all duration-500 border-l-4 border-l-primary">
+              <CardHeader>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <Lightbulb className="h-6 w-6 text-primary" />
+                  </div>
+                  <CardTitle className="font-serif text-xl">
+                    Code as Craft
+                  </CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <div className="relative">
+                  <Quote className="absolute -top-2 -left-2 h-8 w-8 text-primary/20" />
+                  <blockquote className="text-muted-foreground italic text-lg leading-relaxed pl-6">
+                    "Every line of code is a brushstroke on the canvas of
+                    possibility. I believe in writing software that not only
+                    solves problems but inspires others to build upon it."
+                  </blockquote>
+                </div>
+                <div className="mt-6 space-y-3">
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    <span className="text-sm">
+                      Clean, readable code is a love letter to your future self
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-accent rounded-full"></div>
+                    <span className="text-sm">
+                      Performance optimization should never compromise
+                      maintainability
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    <span className="text-sm">
+                      Documentation is the bridge between intention and
+                      implementation
+                    </span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Problem-Solving Approach */}
+            <Card className="group hover:shadow-xl transition-all duration-500 border-l-4 border-l-accent">
+              <CardHeader>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                    <Target className="h-6 w-6 text-accent" />
+                  </div>
+                  <CardTitle className="font-serif text-xl">
+                    Problem-First Thinking
+                  </CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-6">
+                  Before writing a single line of code, I invest time in deeply
+                  understanding the problem space. This approach has led to
+                  solutions that are not just functional, but transformative.
+                </p>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <span className="text-primary font-bold text-sm">1</span>
+                    </div>
+                    <div>
+                      <h4 className="font-medium mb-1">Listen & Understand</h4>
+                      <p className="text-sm text-muted-foreground">
+                        Engage with stakeholders to uncover the real problem
+                        behind the stated requirements
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <span className="text-accent font-bold text-sm">2</span>
+                    </div>
+                    <div>
+                      <h4 className="font-medium mb-1">Design & Prototype</h4>
+                      <p className="text-sm text-muted-foreground">
+                        Create minimal viable solutions to validate assumptions
+                        early
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <span className="text-primary font-bold text-sm">3</span>
+                    </div>
+                    <div>
+                      <h4 className="font-medium mb-1">Iterate & Improve</h4>
+                      <p className="text-sm text-muted-foreground">
+                        Continuously refine based on feedback and changing
+                        requirements
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Experience Timeline */}
+      <section id="about" className="py-20 px-6">
+        <div className="container mx-auto max-w-4xl">
+          <div className="text-center mb-16">
+            <h2 className="font-serif font-bold text-3xl md:text-4xl text-foreground mb-4">
+              Professional Journey
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              A timeline of growth, innovation, and impactful contributions to
+              the tech industry
+            </p>
+          </div>
+
+          {/* Timeline */}
+          <div className="relative">
+            {/* Timeline Line */}
+            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-border"></div>
+
+            {/* Timeline Items */}
+            <div className="space-y-12">
+              <div className="relative flex items-start gap-8">
+                <div className="relative z-10 w-16 h-16 bg-primary rounded-full flex items-center justify-center shadow-lg">
+                  <Shield className="h-8 w-8 text-primary-foreground" />
+                </div>
+                <Card className="flex-1 hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                      <CardTitle className="font-serif text-xl">
+                        Senior Full Stack Engineer
+                      </CardTitle>
+                      <Badge variant="secondary">2022 - Present</Badge>
+                    </div>
+                    <p className="text-primary font-medium">
+                      TechCorp Solutions
+                    </p>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground mb-4">
+                      Leading development of AI-powered enterprise applications,
+                      managing cloud infrastructure, and mentoring junior
+                      developers. Architected scalable microservices handling
+                      1M+ daily users.
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="outline">React</Badge>
+                      <Badge variant="outline">Node.js</Badge>
+                      <Badge variant="outline">AWS</Badge>
+                      <Badge variant="outline">AI/ML</Badge>
+                      <Badge variant="outline">Team Leadership</Badge>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+
+              <div className="relative flex items-start gap-8">
+                <div className="relative z-10 w-16 h-16 bg-accent rounded-full flex items-center justify-center shadow-lg">
+                  <Database className="h-8 w-8 text-accent-foreground" />
+                </div>
+                <Card className="flex-1 hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                      <CardTitle className="font-serif text-xl">
+                        Full Stack Developer
+                      </CardTitle>
+                      <Badge variant="secondary">2020 - 2022</Badge>
+                    </div>
+                    <p className="text-primary font-medium">InnovateLab</p>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground mb-4">
+                      Developed and deployed multiple web applications using
+                      modern frameworks. Implemented DevOps practices and
+                      automated deployment pipelines, reducing deployment time
+                      by 70%.
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="outline">Vue.js</Badge>
+                      <Badge variant="outline">Python</Badge>
+                      <Badge variant="outline">Docker</Badge>
+                      <Badge variant="outline">PostgreSQL</Badge>
+                      <Badge variant="outline">CI/CD</Badge>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+
+              <div className="relative flex items-start gap-8">
+                <div className="relative z-10 w-16 h-16 bg-primary rounded-full flex items-center justify-center shadow-lg">
+                  <Code className="h-8 w-8 text-primary-foreground" />
+                </div>
+                <Card className="flex-1 hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                      <CardTitle className="font-serif text-xl">
+                        Junior Developer
+                      </CardTitle>
+                      <Badge variant="secondary">2018 - 2020</Badge>
+                    </div>
+                    <p className="text-primary font-medium">StartupXYZ</p>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground mb-4">
+                      Started my professional journey building responsive web
+                      applications and learning industry best practices.
+                      Contributed to open-source projects and gained expertise
+                      in modern development workflows.
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="outline">JavaScript</Badge>
+                      <Badge variant="outline">HTML/CSS</Badge>
+                      <Badge variant="outline">Git</Badge>
+                      <Badge variant="outline">Agile</Badge>
+                      <Badge variant="outline">Open Source</Badge>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="py-20 px-6 bg-secondary/30">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="font-serif font-bold text-3xl md:text-4xl text-foreground mb-4">
+              Let's Build Something Amazing
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Ready to turn your ideas into reality? I'm always excited to
+              discuss new opportunities and innovative projects.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {/* Top Left: Contact Form */}
+            <Card className="hover:shadow-xl transition-shadow duration-300">
+              <CardHeader>
+                <CardTitle className="font-serif text-2xl flex items-center gap-3">
+                  <Send className="h-6 w-6 text-primary" />
+                  Get In Touch
+                </CardTitle>
+                <p className="text-muted-foreground">
+                  Have a project in mind? Let's discuss how we can work together
+                  to bring your vision to life.
+                </p>
+              </CardHeader>
+              <CardContent>
+                <form className="space-y-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <label htmlFor="name" className="text-sm font-medium">
+                        Name
+                      </label>
+                      <Input
+                        id="name"
+                        placeholder="Your name"
+                        className="bg-background"
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <label htmlFor="email" className="text-sm font-medium">
+                        Email
+                      </label>
+                      <Input
+                        id="email"
+                        type="email"
+                        placeholder="your.email@example.com"
+                        className="bg-background"
+                      />
+                    </div>
+                  </div>
+                  <div className="space-y-2">
+                    <label htmlFor="subject" className="text-sm font-medium">
+                      Subject
+                    </label>
+                    <Input
+                      id="subject"
+                      placeholder="Project collaboration, job opportunity, etc."
+                      className="bg-background"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label htmlFor="message" className="text-sm font-medium">
+                      Message
+                    </label>
+                    <Textarea
+                      id="message"
+                      placeholder="Tell me about your project..."
+                      rows={6}
+                      className="bg-background resize-none"
+                    />
+                  </div>
+                  <Button size="lg" className="w-full text-lg py-6">
+                    <Send className="mr-2 h-5 w-5" />
+                    Send Message
+                  </Button>
+                </form>
+              </CardContent>
+            </Card>
+
+            {/* Top Right: Availability Status */}
+            <Card className="border-l-4 border-l-primary bg-primary/5">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
+                  <Badge
+                    variant="secondary"
+                    className="bg-primary/10 text-primary"
+                  >
+                    Available for New Projects
+                  </Badge>
+                </div>
+                <h3 className="font-serif font-bold text-xl mb-2">
+                  Ready to Start Immediately
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  I'm currently accepting new client projects and full-time
+                  opportunities. Let's discuss how I can contribute to your
+                  team's success.
+                </p>
+                <div className="flex flex-wrap gap-4">
+                  <div className="flex items-center gap-2 text-sm">
+                    <MapPin className="h-4 w-4 text-primary" />
+                    <span>Remote / San Francisco</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm">
+                    <Calendar className="h-4 w-4 text-primary" />
+                    <span>Available within 2 weeks</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Bottom Left: Quick Connect */}
+            <Card className="hover:shadow-xl transition-shadow duration-300">
+              <CardContent>
+                <h3 className="font-serif font-bold text-xl mb-4">
+                  Quick Connect
+                </h3>
+                <div className="space-y-3">
+                  {/* Email */}
+                  <a
+                    href="mailto:hello@example.com"
+                    className="flex items-center gap-4 p-4 rounded-lg border border-border hover:border-primary hover:bg-primary/5 transition-all duration-300 group"
+                  >
+                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                      <Mail className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <div className="font-medium">Email</div>
+                      <div className="text-sm text-muted-foreground">
+                        hello@example.com
+                      </div>
+                    </div>
+                    <ExternalLink className="h-4 w-4 text-muted-foreground ml-auto group-hover:text-primary transition-colors" />
+                  </a>
+
+                  {/* LinkedIn */}
+                  <a
+                    href="#"
+                    className="flex items-center gap-4 p-4 rounded-lg border border-border hover:border-primary hover:bg-primary/5 transition-all duration-300 group"
+                  >
+                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                      <Linkedin className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <div className="font-medium">LinkedIn</div>
+                      <div className="text-sm text-muted-foreground">
+                        Connect professionally
+                      </div>
+                    </div>
+                    <ExternalLink className="h-4 w-4 text-muted-foreground ml-auto group-hover:text-primary transition-colors" />
+                  </a>
+
+                  {/* Schedule a Call */}
+                  <a
+                    href="#"
+                    className="flex items-center gap-4 p-4 rounded-lg border border-border hover:border-primary hover:bg-primary/5 transition-all duration-300 group"
+                  >
+                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                      <Calendar className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <div className="font-medium">Schedule a Call</div>
+                      <div className="text-sm text-muted-foreground">
+                        Book a 30-minute chat
+                      </div>
+                    </div>
+                    <ExternalLink className="h-4 w-4 text-muted-foreground ml-auto group-hover:text-primary transition-colors" />
+                  </a>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Bottom Right: Recruiter CTA */}
+            <Card className="bg-gradient-to-br from-accent/10 to-primary/10 border-accent/20">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <Coffee className="h-6 w-6 text-accent" />
+                  <h3 className="font-serif font-bold text-xl">
+                    For Recruiters & Hiring Managers
+                  </h3>
+                </div>
+                <p className="text-muted-foreground mb-6">
+                  Looking for a senior engineer who can hit the ground running?
+                  I bring deep expertise in modern tech stacks and a proven
+                  track record of delivering results.
+                </p>
+                <div className="space-y-3 mb-6">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-accent rounded-full"></div>
+                    <span className="text-sm">
+                      5+ years of full-stack development experience
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    <span className="text-sm">
+                      Led teams and mentored junior developers
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-accent rounded-full"></div>
+                    <span className="text-sm">
+                      Specialized in AI, DevOps, and Web3 technologies
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    <span className="text-sm">
+                      Available for remote or hybrid positions
+                    </span>
+                  </div>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <Button size="lg" className="flex-1">
+                    <Mail className="mr-2 h-4 w-4" /> Download Resume
+                  </Button>
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="flex-1 bg-transparent"
+                  >
+                    <Calendar className="mr-2 h-4 w-4" /> Schedule Interview
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-12 px-6 border-t flex items-center justify-center border-border">
+        <p>
+          &copy; 2025 Full Stack Developer. Sheikh Muhammad Ismail
+        </p>
+      </footer>
+    </div>
+  );
+}

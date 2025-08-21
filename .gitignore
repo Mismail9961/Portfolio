@@ -1,0 +1,55 @@
+# Node modules
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# Production build
+build/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# TypeScript
+*.tsbuildinfo
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# MacOS
+.DS_Store
+
+# Tailwind CSS JIT cache
+.tailwindcache/
+
+# IDE/Editor folders
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Optional npm cache folder
+.npm
+
+# Optional lock files if using multiple package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Public files that may be generated
+public/**/*.map
+
+# Misc
+*.log

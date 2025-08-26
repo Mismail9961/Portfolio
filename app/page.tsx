@@ -520,7 +520,7 @@ export default function Portfolio() {
                   <CardContent>
                     <p className="text-muted-foreground mb-4">
                       I develop robust landing page websites and scalable web
-                      applications as a full stack developer for [Company Name],
+                      applications as a full stack developer for Core4tech,
                       utilizing the MERN stack and Redux, while creating
                       frontend dApps, managing project repositories and
                       deployments, and continuously advancing my expertise in

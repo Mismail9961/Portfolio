@@ -640,7 +640,7 @@ export default function Portfolio() {
         {/* Email */}
         <a
           href="mailto:hello@example.com"
-          className="flex items-center gap-3 sm:gap-3 p-2.5 sm:p-3 rounded-lg border border-border hover:border-primary hover:bg-primary/5 transition-all duration-300 group"
+          className="flex items-center gap-3 p-2.5 sm:p-3 rounded-lg border border-border hover:border-primary hover:bg-primary/5 transition-all duration-300 group"
         >
           <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
             <Mail className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
@@ -657,7 +657,7 @@ export default function Portfolio() {
         {/* LinkedIn */}
         <a
           href="#"
-          className="flex items-center gap-3 sm:gap-3 p-2.5 sm:p-3 rounded-lg border border-border hover:border-primary hover:bg-primary/5 transition-all duration-300 group"
+          className="flex items-center gap-3 p-2.5 sm:p-3 rounded-lg border border-border hover:border-primary hover:bg-primary/5 transition-all duration-300 group"
         >
           <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
             <Linkedin className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
@@ -674,7 +674,7 @@ export default function Portfolio() {
         {/* Schedule a Call */}
         <a
           href="#"
-          className="flex items-center gap-3 sm:gap-3 p-2.5 sm:p-3 rounded-lg border border-border hover:border-primary hover:bg-primary/5 transition-all duration-300 group"
+          className="flex items-center gap-3 p-2.5 sm:p-3 rounded-lg border border-border hover:border-primary hover:bg-primary/5 transition-all duration-300 group"
         >
           <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
             <Calendar className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
@@ -721,11 +721,11 @@ export default function Portfolio() {
           <span>Available for remote or hybrid positions</span>
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row gap-2">
-        <Button size="md" className="flex-1">
+      <div className="flex flex-col sm:flex-row gap-2 mt-14">
+        <Button size="lg" className="flex-1">
           <Mail className="mr-2 h-4 w-4" /> Download Resume
         </Button>
-        <Button size="md" variant="outline" className="flex-1 bg-transparent">
+        <Button size="lg" variant="outline" className="flex-1 bg-transparent">
           <Calendar className="mr-2 h-4 w-4" /> Schedule Interview
         </Button>
       </div>

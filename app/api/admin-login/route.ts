@@ -9,7 +9,7 @@ export async function POST(request: NextRequest) {
     const { email, password } = reqBody;
 
     if (
-      email === process.env.ADMIN_EMAIL &&
+      email === process.env.ADMIN_EMAIL_MAIN &&
       password === process.env.ADMIN_PASSWORD
     ) {
       // Sign token with payload and 1h expiry

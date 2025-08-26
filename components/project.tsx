@@ -101,7 +101,7 @@ export default function ProjectsSection() {
             size="lg"
             variant="outline"
             className="text-lg px-8 py-6 bg-transparent"
-            onClick={() => window.open("https://github.com/yourusername", "_blank")}
+            onClick={() => window.open("https://github.com/Mismail9961", "_blank")}
           >
             <Github className="mr-2 h-5 w-5" />
             View All Projects on GitHub

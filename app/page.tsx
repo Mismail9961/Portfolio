@@ -4,7 +4,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import Project from "../components/project"
+import Project from "../components/project";
+import Talk from "../components/talk"
 import {
   ArrowDown,
   Github,
@@ -95,7 +96,7 @@ export default function Portfolio() {
                 <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed max-w-2xl">
                   Full Stack Developer specializing in{" "}
                   <span className="text-accent font-medium">AI</span> and{" "}
-                  <span className="text-accent font-medium">Web3</span>{" "}
+                  <span className="text-accent font-medium">Python</span>{" "}
                   technologies. Transforming complex problems into elegant
                   solutions.
                 </p>
@@ -357,7 +358,7 @@ export default function Portfolio() {
       </section>
 
       {/* Projects Showcase Section */}
-      <Project/>
+      <Project />
 
       {/* Philosophy & Insights Section */}
       <section id="philosophy" className="py-20 px-6">
@@ -391,7 +392,7 @@ export default function Portfolio() {
                   <Quote className="absolute -top-2 -left-2 h-8 w-8 text-primary/20" />
                   <blockquote className="text-muted-foreground italic text-lg leading-relaxed pl-6">
                     "Every line of code is a brushstroke on the canvas of
-                    possibility. I believe in writing software that not only
+                    possibility. I believe in writing Web Applications that not only
                     solves problems but inspires others to build upon it."
                   </blockquote>
                 </div>
@@ -510,28 +511,21 @@ export default function Portfolio() {
                   <CardHeader>
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                       <CardTitle className="font-serif text-xl">
-                        Senior Full Stack Engineer
+                        Full Stack Developer
                       </CardTitle>
-                      <Badge variant="secondary">2022 - Present</Badge>
+                      <Badge variant="secondary">Jan 2025 - Present</Badge>
                     </div>
-                    <p className="text-primary font-medium">
-                      TechCorp Solutions
-                    </p>
+                    <p className="text-primary font-medium">Core4tech</p>
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground mb-4">
-                      Leading development of AI-powered enterprise applications,
-                      managing cloud infrastructure, and mentoring junior
-                      developers. Architected scalable microservices handling
-                      1M+ daily users.
+                      I develop robust landing page websites and scalable web
+                      applications as a full stack developer for [Company Name],
+                      utilizing the MERN stack and Redux, while creating
+                      frontend dApps, managing project repositories and
+                      deployments, and continuously advancing my expertise in
+                      blockchain and full stack development.
                     </p>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="outline">React</Badge>
-                      <Badge variant="outline">Node.js</Badge>
-                      <Badge variant="outline">AWS</Badge>
-                      <Badge variant="outline">AI/ML</Badge>
-                      <Badge variant="outline">Team Leadership</Badge>
-                    </div>
                   </CardContent>
                 </Card>
               </div>
@@ -544,26 +538,18 @@ export default function Portfolio() {
                   <CardHeader>
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                       <CardTitle className="font-serif text-xl">
-                        Full Stack Developer
+                        Frontend Developer
                       </CardTitle>
-                      <Badge variant="secondary">2020 - 2022</Badge>
+                      <Badge variant="secondary">Sep 2023 - Nov 2024</Badge>
                     </div>
-                    <p className="text-primary font-medium">InnovateLab</p>
+                    <p className="text-primary font-medium">GFX MANSION</p>
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground mb-4">
                       Developed and deployed multiple web applications using
-                      modern frameworks. Implemented DevOps practices and
-                      automated deployment pipelines, reducing deployment time
-                      by 70%.
+                      modern frameworks. Implemented Frontend practices and
+                      reducing deployment time by 70%.
                     </p>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="outline">Vue.js</Badge>
-                      <Badge variant="outline">Python</Badge>
-                      <Badge variant="outline">Docker</Badge>
-                      <Badge variant="outline">PostgreSQL</Badge>
-                      <Badge variant="outline">CI/CD</Badge>
-                    </div>
                   </CardContent>
                 </Card>
               </div>
@@ -576,26 +562,24 @@ export default function Portfolio() {
                   <CardHeader>
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                       <CardTitle className="font-serif text-xl">
-                        Junior Developer
+                        Junior Mern Stack Developer
                       </CardTitle>
-                      <Badge variant="secondary">2018 - 2020</Badge>
+                      <Badge variant="secondary">Nov 2024 - April 2025</Badge>
                     </div>
-                    <p className="text-primary font-medium">StartupXYZ</p>
+                    <p className="text-primary font-medium">@Codex</p>
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground mb-4">
-                      Started my professional journey building responsive web
-                      applications and learning industry best practices.
-                      Contributed to open-source projects and gained expertise
-                      in modern development workflows.
+                      I develop landing page websites and full-stack
+                      applications using the MERN stack, building
+                      responsive and optimized frontends while designing and
+                      maintaining scalable backends. I work extensively with
+                      MongoDB for data storage and Prisma as an ORM for
+                      efficient database management. I also manage project
+                      repositories, deployments, and continuously enhance my
+                      full-stack development skills through modern tools and
+                      best practices.
                     </p>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="outline">JavaScript</Badge>
-                      <Badge variant="outline">HTML/CSS</Badge>
-                      <Badge variant="outline">Git</Badge>
-                      <Badge variant="outline">Agile</Badge>
-                      <Badge variant="outline">Open Source</Badge>
-                    </div>
                   </CardContent>
                 </Card>
               </div>
@@ -618,70 +602,7 @@ export default function Portfolio() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Top Left: Contact Form */}
-            <Card className="hover:shadow-xl transition-shadow duration-300">
-              <CardHeader>
-                <CardTitle className="font-serif text-2xl flex items-center gap-3">
-                  <Send className="h-6 w-6 text-primary" />
-                  Get In Touch
-                </CardTitle>
-                <p className="text-muted-foreground">
-                  Have a project in mind? Let's discuss how we can work together
-                  to bring your vision to life.
-                </p>
-              </CardHeader>
-              <CardContent>
-                <form className="space-y-6">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <label htmlFor="name" className="text-sm font-medium">
-                        Name
-                      </label>
-                      <Input
-                        id="name"
-                        placeholder="Your name"
-                        className="bg-background"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <label htmlFor="email" className="text-sm font-medium">
-                        Email
-                      </label>
-                      <Input
-                        id="email"
-                        type="email"
-                        placeholder="your.email@example.com"
-                        className="bg-background"
-                      />
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="subject" className="text-sm font-medium">
-                      Subject
-                    </label>
-                    <Input
-                      id="subject"
-                      placeholder="Project collaboration, job opportunity, etc."
-                      className="bg-background"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="message" className="text-sm font-medium">
-                      Message
-                    </label>
-                    <Textarea
-                      id="message"
-                      placeholder="Tell me about your project..."
-                      rows={6}
-                      className="bg-background resize-none"
-                    />
-                  </div>
-                  <Button size="lg" className="w-full text-lg py-6">
-                    <Send className="mr-2 h-5 w-5" />
-                    Send Message
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
+            <Talk/>
 
             {/* Top Right: Availability Status */}
             <Card className="border-l-4 border-l-primary bg-primary/5">
@@ -706,11 +627,11 @@ export default function Portfolio() {
                 <div className="flex flex-wrap gap-4">
                   <div className="flex items-center gap-2 text-sm">
                     <MapPin className="h-4 w-4 text-primary" />
-                    <span>Remote / San Francisco</span>
+                    <span>Remote / Karachi , Pakistan</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm">
                     <Calendar className="h-4 w-4 text-primary" />
-                    <span>Available within 2 weeks</span>
+                    <span>Available within 1 weeks</span>
                   </div>
                 </div>
               </CardContent>
@@ -734,7 +655,7 @@ export default function Portfolio() {
                     <div>
                       <div className="font-medium">Email</div>
                       <div className="text-sm text-muted-foreground">
-                        hello@example.com
+                        sheikhmuhammadismail79@gmail.com
                       </div>
                     </div>
                     <ExternalLink className="h-4 w-4 text-muted-foreground ml-auto group-hover:text-primary transition-colors" />
@@ -787,9 +708,9 @@ export default function Portfolio() {
                   </h3>
                 </div>
                 <p className="text-muted-foreground mb-6">
-                  Looking for a Full Stack Developer who can hit the ground running?
-                  I bring deep expertise in modern tech stacks and a proven
-                  track record of delivering results.
+                  Looking for a Full Stack Developer who can hit the ground
+                  running? I bring deep expertise in modern tech stacks and a
+                  proven track record of delivering results.
                 </p>
                 <div className="space-y-3 mb-6">
                   <div className="flex items-center gap-2">
@@ -807,7 +728,8 @@ export default function Portfolio() {
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-accent rounded-full"></div>
                     <span className="text-sm">
-                      Specialized in AI, Python, and Full Stack Development technologies
+                      Specialized in AI, Python, and Full Stack Development
+                      technologies
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -837,9 +759,7 @@ export default function Portfolio() {
 
       {/* Footer */}
       <footer className="py-12 px-6 border-t flex items-center justify-center border-border">
-        <p>
-          &copy; 2025 Full Stack Developer. Sheikh Muhammad Ismail
-        </p>
+        <p>&copy; 2025 Full Stack Developer. Sheikh Muhammad Ismail</p>
       </footer>
     </div>
   );

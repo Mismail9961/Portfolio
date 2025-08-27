@@ -673,7 +673,7 @@ export default function Portfolio() {
 
         {/* Schedule a Call */}
         <a
-          href="#"
+          href="https://wa.me/923102437201" target="_blank"
           className="flex items-center gap-3 p-2.5 sm:p-3 rounded-lg border border-border hover:border-primary hover:bg-primary/5 transition-all duration-300 group"
         >
           <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">

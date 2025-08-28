@@ -752,28 +752,30 @@ export default function Portfolio() {
                   </div>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-2 mt-14">
-                  <a
-                    href="/Sheikh Muhammad Ismail Resume.pdf"
-                    download
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Button
+                    asChild
+                    size="lg"
+                    variant="outline"
+                    className="flex-1 bg-transparent"
                   >
-                    <Button
-                      variant="outline"
-                      size="lg"
-                      className="flex-1 bg-transparent"
+                    <a
+                      href="/Sheikh Muhammad Ismail Resume.pdf"
+                      download
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      Download Resume
                       <ExternalLink className="mr-2 h-4 w-4" />
-                    </Button>
-                  </a>
+                      Download Resume
+                    </a>
+                  </Button>
 
                   <Button
                     size="lg"
                     variant="outline"
                     className="flex-1 bg-transparent"
                   >
-                    <Calendar className="mr-2 h-4 w-4" /> Schedule Interview
+                    <Calendar className="mr-2 h-4 w-4" />
+                    Schedule Interview
                   </Button>
                 </div>
               </CardContent>

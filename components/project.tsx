@@ -49,7 +49,7 @@ export default function ProjectsSection() {
   }
 
   return (
-    <section id="projects" className="py-20 px-6 bg-secondary/30">
+    <section id="projects" className="px-6 bg-secondary/30">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="font-serif font-bold text-3xl md:text-4xl text-foreground mb-4">
@@ -115,6 +115,7 @@ export default function ProjectsSection() {
             <Folder className="mr-2 h-5 w-5" />
             View More Projects
           </Button>
+          
         </div>
       </div>
     </section>

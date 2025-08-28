@@ -1,11 +1,10 @@
 "use client";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
 import axios from "axios";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Folder } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 
 // Type definition
 interface Project {
@@ -19,7 +18,6 @@ interface Project {
 export default function ProjectsSection() {
   const [projects, setProjects] = useState<Project[]>([]);
   const [loading, setLoading] = useState(true);
-  const router = useRouter();
 
   useEffect(() => {
     axios
@@ -53,16 +51,15 @@ export default function ProjectsSection() {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="font-serif font-bold text-3xl md:text-4xl text-foreground mb-4">
-            Featured Projects
+            Projects
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Innovative solutions showcasing expertise across AI, Python, and
-            full-stack development
+            Innovative solutions showcasing expertise across AI, Python, and full-stack development
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          {projects.slice(0, 4).map((proj) => (
+          {projects.map((proj) => (
             <Card
               key={proj._id}
               className="group overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
@@ -70,9 +67,7 @@ export default function ProjectsSection() {
               <CardHeader>
                 <div className="flex items-start justify-between">
                   <div>
-                    <CardTitle className="font-serif text-xl mb-2">
-                      {proj.name}
-                    </CardTitle>
+                    <CardTitle className="font-serif text-xl mb-2">{proj.name}</CardTitle>
                     <div className="flex flex-wrap gap-2">
                       {proj.uses?.map((tech, idx) => (
                         <Badge key={idx} variant="outline">
@@ -81,10 +76,7 @@ export default function ProjectsSection() {
                       ))}
                     </div>
                   </div>
-                  <Badge
-                    variant="secondary"
-                    className="bg-primary/10 text-primary"
-                  >
+                  <Badge variant="secondary" className="bg-primary/10 text-primary">
                     New
                   </Badge>
                 </div>
@@ -109,11 +101,10 @@ export default function ProjectsSection() {
             size="lg"
             variant="outline"
             className="text-lg px-8 py-6 bg-transparent"
-            disabled={false}
-            onClick={() => router.push("/all-projects")}
+            onClick={() => window.open("https://github.com/Mismail9961", "_blank")}
           >
-            <Folder className="mr-2 h-5 w-5" />
-            View More Projects
+            <Github className="mr-2 h-5 w-5" />
+            View More Projects on GitHub
           </Button>
         </div>
       </div>

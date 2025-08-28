@@ -112,14 +112,21 @@ export default function Portfolio() {
                     <ArrowDown className="ml-2 h-5 w-5" />
                   </Button>
                 </a>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="text-lg px-8 py-6 bg-transparent"
+                <a
+                  href="/Sheikh Muhammad Ismail Resume.pdf"
+                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Download Resume
-                  <ExternalLink className="ml-2 h-5 w-5" />
-                </Button>
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="text-lg px-8 py-6 bg-transparent"
+                  >
+                    Download Resume
+                    <ExternalLink className="ml-2 h-5 w-5" />
+                  </Button>
+                </a>
               </div>
 
               {/* Social Links */}
@@ -745,9 +752,22 @@ export default function Portfolio() {
                   </div>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-2 mt-14">
-                  <Button size="lg" className="flex-1">
-                    <Mail className="mr-2 h-4 w-4" /> Download Resume
-                  </Button>
+                  <a
+                    href="/Sheikh Muhammad Ismail Resume.pdf"
+                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button
+                      variant="outline"
+                      size="lg"
+                      className="text-lg px-8 py-4 bg-transparent"
+                    >
+                      Download Resume
+                      <ExternalLink className="ml-2 h-5 w-5" />
+                    </Button>
+                  </a>
+
                   <Button
                     size="lg"
                     variant="outline"

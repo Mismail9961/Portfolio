@@ -4,31 +4,21 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-let isConnected = false;
+let isConnected = false; // Track connection state
 
 async function connect() {
   if (isConnected) {
-    console.log("Using cached MongoDB connection");
+    console.log("✅ Using cached MongoDB connection");
     return;
   }
 
   try {
     await mongoose.connect(process.env.MONGO_URI!);
 
-    const connection = mongoose.connection;
-
-    connection.on("connected", () => {
-      console.log("MongoDB connected successfully");
-    });
-
-    connection.on("error", (err) => {
-      console.error("MongoDB connection Error:", err);
-      process.exit(1);
-    });
-
     isConnected = true;
+    console.log("✅ MongoDB connected successfully");
   } catch (error) {
-    console.error("MongoDB connection failed:", error);
+    console.error("❌ MongoDB connection failed:", error);
     throw error;
   }
 }

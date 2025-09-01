@@ -1,4 +1,3 @@
-
 import mongoose, { Schema } from "mongoose";
 
 const projectSchema = new Schema({
@@ -8,8 +7,8 @@ const projectSchema = new Schema({
   link: { type: String, required: true },
 });
 
-
-const productModel =
+// ✅ Use existing model if already compiled (Next.js hot reload safe)
+const Project =
   mongoose.models.Project || mongoose.model("Project", projectSchema);
 
-export default productModel;
+export default Project;

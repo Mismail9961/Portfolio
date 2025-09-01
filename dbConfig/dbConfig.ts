@@ -22,7 +22,7 @@ async function connect() {
     });
 
     connection.on("error", (err) => {
-      console.error("MongoDB connection error:", err);
+      console.error("MongoDB connection Error:", err);
       process.exit(1);
     });
 

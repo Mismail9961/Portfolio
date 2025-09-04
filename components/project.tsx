@@ -94,7 +94,7 @@ export default function ProjectsSection() {
                 <Button
                   variant="ghost"
                   size="sm"
-                  className="text-primary hover:text-primary"
+                  className="text-primary hover:text-white"
                   onClick={() => window.open(proj.link, "_blank")}
                 >
                   Learn More <ExternalLink className="h-4 w-4 ml-1" />

@@ -1,7 +1,7 @@
 
 <img width="1536" height="672" alt="Gemini_Generated_Image_4q7j6b4q7j6b4q7j" src="https://github.com/user-attachments/assets/0e7bc13d-1b71-49b7-a141-925ea96c180c" />
 
-My Portfolio
+Portfolio : Sheikh Muhammad Ismail
 
 A modern and dynamic portfolio website built with Next.js and MongoDB, designed to showcase my skills, projects, and professional journey as a Full Stack and React Native Developer.
 

@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -6,6 +8,13 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Project from "../components/project";
 import Talk from "../components/talk";
+import Hero from "../components/Hero";
+import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import Navbar from "../components/Navbar"
+
 import {
   ArrowDown,
   Github,
@@ -34,202 +43,29 @@ import {
 } from "lucide-react";
 
 export default function Portfolio() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 10);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <div className="min-h-screen bg-background">
-      {/* Navigation Header */}
-      <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
-        <nav className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <a href="/">
-              <div className="font-serif font-bold text-xl text-foreground">
-                Sheikh Muhammad Ismail
-              </div>
-            </a>
-            <div className="hidden md:flex items-center space-x-8">
-              <a
-                href="/#about"
-                className="text-muted-foreground hover:text-primary transition-colors"
-              >
-                About
-              </a>
-              <a
-                href="/all-projects"
-                className="text-muted-foreground hover:text-primary transition-colors"
-              >
-                Projects
-              </a>
-              <a
-                href="/#skills"
-                className="text-muted-foreground hover:text-primary transition-colors"
-              >
-                Skills
-              </a>
-              <a
-                href="/#philosophy"
-                className="text-muted-foreground hover:text-primary transition-colors"
-              >
-                Philosophy
-              </a>
-              <a
-                href="/#contact"
-                className="text-muted-foreground hover:text-primary transition-colors"
-              >
-                Contact
-              </a>
-            </div>
-          </div>
-        </nav>
-      </header>
-
+      <Navbar/>
       {/* Hero Section */}
-      <section className="pt-24 pb-16 px-6">
-        <div className="container mx-auto max-w-6xl">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            {/* Hero Content */}
-            <div className="flex-1 text-center lg:text-left">
-              <div className="mb-6">
-                <Badge variant="secondary" className="mb-4 text-sm font-medium">
-                  Available for new opportunities
-                </Badge>
-                <h1 className="font-serif font-bold text-4xl md:text-6xl lg:text-7xl text-foreground mb-6 leading-tight">
-                  Building the <span className="text-primary">Future</span> of
-                  Technology
-                </h1>
-                <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed max-w-2xl">
-                  Full Stack Developer specializing in{" "}
-                  <span className="text-accent font-medium">AI</span> and{" "}
-                  <span className="text-accent font-medium">Python</span>{" "}
-                  technologies. Transforming complex problems into elegant
-                  solutions.
-                </p>
-              </div>
-
-              {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-                <a href="#projects">
-                  <Button size="lg" className="text-lg px-8 py-6">
-                    View My Work
-                    <ArrowDown className="ml-2 h-5 w-5" />
-                  </Button>
-                </a>
-                <a
-                  href="/Sheikh Muhammad Ismail Resume.pdf"
-                  download
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    className="text-lg px-8 py-6 bg-transparent"
-                  >
-                    Download Resume
-                    <ExternalLink className="ml-2 h-5 w-5" />
-                  </Button>
-                </a>
-              </div>
-
-              {/* Social Links */}
-              <div className="flex items-center gap-6 justify-center lg:justify-start">
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-primary transition-colors p-2"
-                  aria-label="GitHub Profile"
-                >
-                  <Github className="h-6 w-6" />
-                </a>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-primary transition-colors p-2"
-                  aria-label="LinkedIn Profile"
-                >
-                  <Linkedin className="h-6 w-6" />
-                </a>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-primary transition-colors p-2"
-                  aria-label="Email Contact"
-                >
-                  <Mail className="h-6 w-6" />
-                </a>
-              </div>
-            </div>
-
-            {/* Hero Visual */}
-            <div className="flex-1 w-full max-w-full sm:max-w-lg px-5 sm:px-0">
-              <div className="relative">
-                {/* Animated background elements */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl blur-3xl animate-pulse"></div>
-
-                <div className="relative bg-card border border-border rounded-3xl p-6 sm:p-8 shadow-2xl">
-                  <div className="space-y-4">
-                    {/* Status */}
-                    <div className="flex items-center gap-2 sm:gap-3 text-xs sm:text-sm">
-                      <div className="w-2 h-2 sm:w-3 sm:h-3 bg-primary rounded-full animate-pulse"></div>
-                      <div className="text-muted-foreground font-mono">
-                        Currently coding...
-                      </div>
-                    </div>
-
-                    {/* Code Block */}
-                    <div className="bg-muted rounded-lg p-3 sm:p-4 font-mono text-[10px] sm:text-sm overflow-x-auto">
-                      <div className="text-accent">const</div>
-                      <div className="text-foreground">developer = {"{"}</div>
-                      <div className="ml-3 sm:ml-4 text-muted-foreground">
-                        name:{" "}
-                        <span className="text-primary">
-                          'Sheikh Muhammad Ismail'
-                        </span>
-                        ,
-                      </div>
-                      <div className="ml-3 sm:ml-4 text-muted-foreground">
-                        skills:{" "}
-                        <span className="text-accent">
-                          ['AI', 'Python', 'Web3', 'Web Developer']
-                        </span>
-                        ,
-                      </div>
-                      <div className="ml-3 sm:ml-4 text-muted-foreground">
-                        passion:{" "}
-                        <span className="text-primary">'Innovation'</span>
-                      </div>
-                      <div className="text-foreground">{"}"}</div>
-                    </div>
-
-                    {/* Badges */}
-                    <div className="flex flex-wrap gap-2 text-xs sm:text-sm">
-                      <Badge variant="secondary">TypeScript</Badge>
-                      <Badge variant="secondary">React</Badge>
-                      <Badge variant="secondary">Node.js</Badge>
-                      <Badge variant="secondary">Next.js</Badge>
-                      <Badge variant="secondary">JavaScript</Badge>
-                      <Badge variant="secondary">Express.js</Badge>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Scroll Indicator */}
-      <div className="flex justify-center pb-8">
-        <div className="animate-bounce">
-          <ArrowDown className="h-6 w-6 text-muted-foreground" />
-        </div>
-      </div>
+      <Hero />
 
       {/* Skills Section */}
-      <section id="skills" className="py-20 px-6 bg-secondary/30">
+      <section id="skills" className="py-20 px-6">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="font-serif font-bold text-3xl md:text-4xl text-foreground mb-4">
               Technical Expertise
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Specialized in cutting-edge technologies across the full
-              development stack
+              A comprehensive overview of my technical skills and proficiency levels
             </p>
           </div>
 
@@ -452,7 +288,7 @@ export default function Portfolio() {
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center shrink-0 mt-1">
                       <span className="text-primary font-bold text-sm">1</span>
                     </div>
                     <div>
@@ -464,7 +300,7 @@ export default function Portfolio() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center shrink-0 mt-1">
                       <span className="text-accent font-bold text-sm">2</span>
                     </div>
                     <div>
@@ -476,7 +312,7 @@ export default function Portfolio() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center shrink-0 mt-1">
                       <span className="text-primary font-bold text-sm">3</span>
                     </div>
                     <div>
@@ -717,7 +553,7 @@ export default function Portfolio() {
             </Card>
 
             {/* Bottom Right: Recruiter CTA */}
-            <Card className="bg-gradient-to-br from-accent/10 to-primary/10 border-accent/20">
+            <Card className="bg-linear-to-br from-accent/10 to-primary/10 border-accent/20">
               <CardContent className="p-3 sm:p-5">
                 <div className="flex items-center gap-2.5 mb-3">
                   <Coffee className="h-5 w-5 sm:h-6 sm:w-6 text-accent" />

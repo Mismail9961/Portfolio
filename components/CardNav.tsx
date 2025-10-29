@@ -3,6 +3,7 @@ import { gsap } from 'gsap';
 // use your own icon import if react-icons is not available
 import { GoArrowUpRight } from 'react-icons/go';
 import './CardNav.css';
+import { useRouter } from "next/navigation";
 
 type CardNavLink = {
   label: string;
@@ -45,6 +46,12 @@ const CardNav: React.FC<CardNavProps> = ({
   const navRef = useRef<HTMLDivElement | null>(null);
   const cardsRef = useRef<HTMLDivElement[]>([]);
   const tlRef = useRef<gsap.core.Timeline | null>(null);
+
+  const router = useRouter();
+  
+  const handleClick = () => {
+    router.push("/#contact");
+  };
 
   const calculateHeight = () => {
     const navEl = navRef.current;
@@ -181,6 +188,7 @@ const CardNav: React.FC<CardNavProps> = ({
           </div>
 
           <button
+            onClick={handleClick}
             type="button"
             className="card-nav-cta-button"
             style={{ backgroundColor: buttonBgColor, color: buttonTextColor }}

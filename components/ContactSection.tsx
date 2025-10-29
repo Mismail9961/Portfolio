@@ -30,7 +30,7 @@ export default function ContactSection() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <h2 className="font-serif font-bold text-3xl md:text-4xl mb-4">
+          <h2 className="font-serif font-bold text-3xl md:text-4xl mb-4 text-white">
             Let's Build Something Amazing
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
@@ -49,7 +49,7 @@ export default function ContactSection() {
             viewport={{ once: true }}
             className="flex"
           >
-            <Card className="flex flex-col w-full bg-neutral-900 text-white border border-gray-700 h-full">
+            <Card className="flex flex-col w-full bg-black text-white border border-gray-700 h-full">
               <CardContent className="p-5 flex-grow">
                 <Talk />
               </CardContent>
@@ -64,15 +64,15 @@ export default function ContactSection() {
             viewport={{ once: true }}
             className="flex"
           >
-            <Card className="flex flex-col w-full h-full border-l-4 border-primary bg-neutral-900 text-white">
+            <Card className="flex flex-col w-full h-full border-l-4 border-white bg-black text-white">
               <CardContent className="p-5 flex-grow">
                 <div className="flex items-center gap-2 mb-3">
-                  <div className="w-3 h-3 bg-primary rounded-full animate-pulse" />
-                  <Badge className="bg-primary/20 text-primary text-xs sm:text-sm">
+                  <div className="w-3 h-3 bg-white rounded-full animate-pulse" />
+                  <Badge className="bg-white/10 text-white text-xs sm:text-sm">
                     Available for New Projects
                   </Badge>
                 </div>
-                <h3 className="font-serif font-bold text-xl mb-2">
+                <h3 className="font-serif font-bold text-xl mb-2 text-white">
                   Ready to Start Immediately
                 </h3>
                 <p className="text-gray-400 text-sm mb-4">
@@ -82,11 +82,11 @@ export default function ContactSection() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 text-sm text-gray-300">
                   <div className="flex items-center gap-1.5">
-                    <MapPin className="h-4 w-4 text-primary" />
+                    <MapPin className="h-4 w-4 text-white" />
                     <span>Remote / Karachi, Pakistan</span>
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <Calendar className="h-4 w-4 text-primary" />
+                    <Calendar className="h-4 w-4 text-white" />
                     <span>Available within 1 week</span>
                   </div>
                 </div>
@@ -102,65 +102,69 @@ export default function ContactSection() {
             viewport={{ once: true }}
             className="flex"
           >
-            <Card className="flex flex-col w-full h-full bg-neutral-900 text-white border border-gray-700 hover:shadow-xl transition-shadow duration-300">
+            <Card className="flex flex-col w-full h-full bg-black text-white border border-gray-700 hover:shadow-[0_0_25px_rgba(255,255,255,0.1)] transition-shadow duration-300">
               <CardContent className="p-5 flex-grow">
-                <h3 className="font-serif font-bold text-xl mb-4">
+                <h3 className="font-serif font-bold text-xl mb-4 text-white">
                   Quick Connect
                 </h3>
                 <div className="space-y-3">
                   {/* Email */}
                   <a
                     href="mailto:sheikhmuhammadismail79@gmail.com"
-                    className="flex items-center gap-3 p-3 rounded-lg border border-gray-700 hover:border-primary hover:bg-primary/10 transition-all group"
+                    className="flex items-center gap-3 p-3 rounded-lg border border-gray-700 hover:border-white hover:bg-white/10 transition-all group"
                   >
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                      <Mail className="h-6 w-6 text-primary" />
+                    <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center group-hover:bg-white/20 transition-colors">
+                      <Mail className="h-6 w-6 text-white" />
                     </div>
                     <div className="overflow-hidden">
-                      <div className="font-medium text-base truncate">Email</div>
+                      <div className="font-medium text-base truncate text-white">
+                        Email
+                      </div>
                       <div className="text-sm text-gray-400 truncate">
                         sheikhmuhammadismail79@gmail.com
                       </div>
                     </div>
-                    <ExternalLink className="h-4 w-4 text-gray-500 ml-auto group-hover:text-primary transition-colors hidden sm:block" />
+                    <ExternalLink className="h-4 w-4 text-gray-500 ml-auto group-hover:text-white transition-colors hidden sm:block" />
                   </a>
 
                   {/* LinkedIn */}
                   <a
                     href="https://www.linkedin.com/in/sheikh-muhammad-ismail"
                     target="_blank"
-                    className="flex items-center gap-3 p-3 rounded-lg border border-gray-700 hover:border-primary hover:bg-primary/10 transition-all group"
+                    className="flex items-center gap-3 p-3 rounded-lg border border-gray-700 hover:border-white hover:bg-white/10 transition-all group"
                   >
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                      <Linkedin className="h-6 w-6 text-primary" />
+                    <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center group-hover:bg-white/20 transition-colors">
+                      <Linkedin className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <div className="font-medium text-base">LinkedIn</div>
+                      <div className="font-medium text-base text-white">
+                        LinkedIn
+                      </div>
                       <div className="text-sm text-gray-400">
                         Connect professionally
                       </div>
                     </div>
-                    <ExternalLink className="h-4 w-4 text-gray-500 ml-auto group-hover:text-primary transition-colors hidden sm:block" />
+                    <ExternalLink className="h-4 w-4 text-gray-500 ml-auto group-hover:text-white transition-colors hidden sm:block" />
                   </a>
 
                   {/* WhatsApp */}
                   <a
                     href="https://wa.me/923102437201"
                     target="_blank"
-                    className="flex items-center gap-3 p-3 rounded-lg border border-gray-700 hover:border-primary hover:bg-primary/10 transition-all group"
+                    className="flex items-center gap-3 p-3 rounded-lg border border-gray-700 hover:border-white hover:bg-white/10 transition-all group"
                   >
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                      <Calendar className="h-6 w-6 text-primary" />
+                    <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center group-hover:bg-white/20 transition-colors">
+                      <Calendar className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <div className="font-medium text-base">
+                      <div className="font-medium text-base text-white">
                         Schedule a Call
                       </div>
                       <div className="text-sm text-gray-400">
                         Book a 30-minute chat
                       </div>
                     </div>
-                    <ExternalLink className="h-4 w-4 text-gray-500 ml-auto group-hover:text-primary transition-colors hidden sm:block" />
+                    <ExternalLink className="h-4 w-4 text-gray-500 ml-auto group-hover:text-white transition-colors hidden sm:block" />
                   </a>
                 </div>
               </CardContent>
@@ -175,12 +179,12 @@ export default function ContactSection() {
             viewport={{ once: true }}
             className="flex"
           >
-            <Card className="flex flex-col w-full h-full bg-gradient-to-br from-neutral-900 via-black to-neutral-800 border border-gray-700 text-white">
+            <Card className="flex flex-col w-full h-full bg-gradient-to-br from-black via-neutral-900 to-black border border-gray-700 text-white">
               <CardContent className="p-5 flex-grow flex flex-col justify-between">
                 <div>
                   <div className="flex items-center gap-2.5 mb-3">
-                    <Coffee className="h-6 w-6 text-primary" />
-                    <h3 className="font-serif font-bold text-xl">
+                    <Coffee className="h-6 w-6 text-white" />
+                    <h3 className="font-serif font-bold text-xl text-white">
                       For Recruiters & Hiring Managers
                     </h3>
                   </div>
@@ -192,28 +196,32 @@ export default function ContactSection() {
 
                   <div className="space-y-2 mb-6 text-sm text-gray-300">
                     <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-primary rounded-full" />
+                      <div className="w-2 h-2 bg-white rounded-full" />
                       <span>2+ years of full-stack development experience</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-primary rounded-full" />
+                      <div className="w-2 h-2 bg-white rounded-full" />
                       <span>Led teams and mentored junior developers</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-primary rounded-full" />
+                      <div className="w-2 h-2 bg-white rounded-full" />
                       <span>
                         Specialized in AI, Python, and Full Stack Development
                       </span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-primary rounded-full" />
+                      <div className="w-2 h-2 bg-white rounded-full" />
                       <span>Available for remote or hybrid positions</span>
                     </div>
                   </div>
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-3 mt-auto">
-                  <Button asChild size="lg" className="flex-1">
+                  <Button
+                    asChild
+                    size="lg"
+                    className="flex-1 bg-white text-black hover:bg-black hover:text-white border border-white transition-all"
+                  >
                     <a
                       href="/Sheikh Muhammad Ismail Resume.pdf"
                       download
@@ -228,7 +236,7 @@ export default function ContactSection() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="flex-1 bg-transparent text-white border-gray-600 hover:border-primary"
+                    className="flex-1 bg-transparent text-white border border-white hover:bg-white hover:text-black transition-all"
                   >
                     <Calendar className="mr-2 h-4 w-4" /> Schedule Interview
                   </Button>

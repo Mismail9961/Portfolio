@@ -3,7 +3,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Github, Linkedin, Mail, ArrowDown, ExternalLink } from "lucide-react";
-import { motion } from "framer-motion";
 import PixelBlast from "./PixelBlast"; // 👈 background animation
 
 export default function HeroSection() {
@@ -42,12 +41,7 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative z-[2] container mx-auto max-w-6xl flex flex-col lg:flex-row items-center gap-16">
         {/* Left Content */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="flex-1 text-center lg:text-left"
-        >
+        <div className="flex-1 text-center lg:text-left">
           <Badge
             variant="secondary"
             className="bg-white/10 border border-white/20 text-white mb-6 text-sm font-medium backdrop-blur-md"
@@ -118,15 +112,10 @@ export default function HeroSection() {
               <Mail className="h-6 w-6" />
             </a>
           </div>
-        </motion.div>
+        </div>
 
         {/* Right Visual */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2 }}
-          className="flex-1 w-full max-w-lg relative"
-        >
+        <div className="flex-1 w-full max-w-lg relative">
           <div className="relative bg-zinc-900/80 border border-zinc-800 rounded-3xl p-6 shadow-2xl backdrop-blur-xl">
             {/* Status */}
             <div className="flex items-center gap-3 mb-4 text-sm">
@@ -163,18 +152,13 @@ export default function HeroSection() {
               ))}
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
 
       {/* Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1, y: [0, 10, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}
-        className="absolute bottom-10 flex justify-center z-[2]"
-      >
-        <ArrowDown className="h-6 w-6 text-white" />
-      </motion.div>
+      <div className="absolute bottom-10 flex justify-center z-[2]">
+        <ArrowDown className="h-6 w-6 text-white animate-bounce" />
+      </div>
     </section>
   );
 }

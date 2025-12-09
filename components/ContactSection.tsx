@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
 import {
   Mail,
   Calendar,
@@ -23,13 +22,7 @@ export default function ContactSection() {
     >
       <div className="container mx-auto max-w-6xl">
         {/* Header */}
-        <motion.div
-          className="text-center mb-16"
-          initial={{ opacity: 0, y: -30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          viewport={{ once: true }}
-        >
+        <div className="text-center mb-16">
           <h2 className="font-serif font-bold text-3xl md:text-4xl mb-4 text-white">
             Let's Build Something Amazing
           </h2>
@@ -37,33 +30,21 @@ export default function ContactSection() {
             Ready to turn your ideas into reality? I'm always excited to discuss
             new opportunities and innovative projects.
           </p>
-        </motion.div>
+        </div>
 
         {/* Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
           {/* Contact Form */}
-          <motion.div
-            initial={{ opacity: 0, x: -60 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            viewport={{ once: true }}
-            className="flex"
-          >
+          <div className="flex">
             <Card className="flex flex-col w-full bg-black text-white border border-gray-700 h-full">
               <CardContent className="p-5 flex-grow">
                 <Talk />
               </CardContent>
             </Card>
-          </motion.div>
+          </div>
 
           {/* Availability */}
-          <motion.div
-            initial={{ opacity: 0, x: 60 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-            viewport={{ once: true }}
-            className="flex"
-          >
+          <div className="flex">
             <Card className="flex flex-col w-full h-full border-l-4 border-white bg-black text-white">
               <CardContent className="p-5 flex-grow">
                 <div className="flex items-center gap-2 mb-3">
@@ -92,16 +73,10 @@ export default function ContactSection() {
                 </div>
               </CardContent>
             </Card>
-          </motion.div>
+          </div>
 
           {/* Quick Connect */}
-          <motion.div
-            initial={{ opacity: 0, y: 60 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
-            viewport={{ once: true }}
-            className="flex"
-          >
+          <div className="flex">
             <Card className="flex flex-col w-full h-full bg-black text-white border border-gray-700 hover:shadow-[0_0_25px_rgba(255,255,255,0.1)] transition-shadow duration-300">
               <CardContent className="p-5 flex-grow">
                 <h3 className="font-serif font-bold text-xl mb-4 text-white">
@@ -169,16 +144,10 @@ export default function ContactSection() {
                 </div>
               </CardContent>
             </Card>
-          </motion.div>
+          </div>
 
           {/* Recruiter CTA */}
-          <motion.div
-            initial={{ opacity: 0, y: 60 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
-            viewport={{ once: true }}
-            className="flex"
-          >
+          <div className="flex">
             <Card className="flex flex-col w-full h-full bg-gradient-to-br from-black via-neutral-900 to-black border border-gray-700 text-white">
               <CardContent className="p-5 flex-grow flex flex-col justify-between">
                 <div>
@@ -243,7 +212,7 @@ export default function ContactSection() {
                 </div>
               </CardContent>
             </Card>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

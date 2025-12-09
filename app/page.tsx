@@ -3,8 +3,6 @@ import Project from "../components/project";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar"
 import SkillsSection from "@/components/SkillsSection";
-import TextShuffle from "@/components/TextShuffle"
-import TextShuffleLeft from "@/components/TextShuffleLeft"
 import ExperienceTimeline from "@/components/ExperienceTimeline"
 import ContactSection from "@/components/ContactSection"
 
@@ -18,8 +16,6 @@ export default function Portfolio() {
       <SkillsSection/>
       {/* Projects Showcase Section */}
       <Project />
-      <TextShuffle/>
-      <TextShuffleLeft/>
       <ExperienceTimeline/>
       <ContactSection/>
       {/* Footer */}

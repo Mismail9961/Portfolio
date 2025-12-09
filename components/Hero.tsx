@@ -19,7 +19,7 @@ export default function HeroSection() {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
-  const skills = ['AI & ML', 'Python', 'React', 'Next.js', 'Node.js', 'Web3'];
+  const skills = ['Python', 'React', 'Next.js', 'Node.js', 'React Native', 'Django', 'GraphQL', 'TypeScript', 'Docker'];
 
   return (
     <section className="relative min-h-screen bg-black overflow-hidden flex items-center justify-center px-3 sm:px-4 py-12 sm:py-20">
@@ -78,7 +78,7 @@ export default function HeroSection() {
                 </span>
               </h1>
               <p className="text-base sm:text-xl text-white/60 max-w-xl leading-relaxed">
-                Full Stack Developer & AI Enthusiast turning complex problems into elegant solutions. 
+                Full Stack Developer & React Native Developer turning complex problems into elegant solutions. 
                 Specialized in building scalable applications with cutting-edge technologies.
               </p>
             </div>
@@ -135,8 +135,8 @@ export default function HeroSection() {
                 <pre className="text-xs sm:text-sm text-white/80 font-mono overflow-x-auto">
 {`const developer = {
   name: "Sheikh Muhammad Ismail",
-  role: "Full Stack Developer",
-  expertise: ["AI", "Python", "Web3"],
+  role: "Full Stack & React Native Developer",
+  expertise: ["React Native", "Python", "Node Js"],
   passion: "Innovation ✨",
   status: "Open to opportunities"
 }`}
@@ -165,11 +165,11 @@ export default function HeroSection() {
               {/* Stats */}
               <div className="grid grid-cols-3 gap-3 sm:gap-4 mt-4 sm:mt-6 pt-4 sm:pt-6 border-t border-white/10">
                 <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-white">50+</div>
+                  <div className="text-xl sm:text-2xl font-bold text-white">20+</div>
                   <div className="text-xs text-white/50">Projects</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-white">5+</div>
+                  <div className="text-xl sm:text-2xl font-bold text-white">2+</div>
                   <div className="text-xs text-white/50">Years Exp</div>
                 </div>
                 <div className="text-center">

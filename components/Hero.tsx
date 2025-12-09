@@ -1,164 +1,216 @@
-"use client";
-
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Github, Linkedin, Mail, ArrowDown, ExternalLink } from "lucide-react";
-import PixelBlast from "./PixelBlast"; // 👈 background animation
+import React, { useState, useEffect } from 'react';
+import { ArrowRight, Github, Linkedin, Mail, Sparkles, Code2, Rocket } from 'lucide-react';
 
 export default function HeroSection() {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+    
+    const handleMouseMove = (e: MouseEvent) => {
+      setMousePosition({
+        x: (e.clientX / window.innerWidth - 0.5) * 20,
+        y: (e.clientY / window.innerHeight - 0.5) * 20
+      });
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
+
+  const skills = ['AI & ML', 'Python', 'React', 'Next.js', 'Node.js', 'Web3'];
+
   return (
-    <section className="relative bg-black text-white overflow-hidden min-h-screen flex flex-col justify-center items-center px-6 py-24">
-      {/* 🎨 PixelBlast Background (only for Hero, not Navbar) */}
-      <div className="absolute top-0 left-0 w-full h-full z-0 overflow-hidden pointer-events-none">
-        <div
-          className="absolute top-[80px] left-0 w-full h-[calc(100%-80px)]" // 👈 Leaves space for navbar
-        >
-          <PixelBlast
-            variant="circle"
-            pixelSize={6}
-            color="#B19EEF"
-            patternScale={3}
-            patternDensity={1.2}
-            pixelSizeJitter={0.5}
-            enableRipples
-            rippleSpeed={0.4}
-            rippleThickness={0.12}
-            rippleIntensityScale={1.5}
-            liquid
-            liquidStrength={0.12}
-            liquidRadius={1.2}
-            liquidWobbleSpeed={5}
-            speed={0.6}
-            edgeFade={0.25}
-            transparent
+    <section className="relative min-h-screen bg-black overflow-hidden flex items-center justify-center px-4 py-20">
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        {/* Grid Pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:72px_72px]" />
+        
+        {/* Gradient Orbs - White theme */}
+        <div 
+          className="absolute top-1/4 -left-48 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-pulse"
+          style={{
+            transform: `translate(${mousePosition.x}px, ${mousePosition.y}px)`
+          }}
+        />
+        <div 
+          className="absolute bottom-1/4 -right-48 w-96 h-96 bg-white/3 rounded-full blur-3xl animate-pulse"
+          style={{
+            transform: `translate(${-mousePosition.x}px, ${-mousePosition.y}px)`,
+            animationDelay: '1s'
+          }}
+        />
+        
+        {/* Floating Particles */}
+        {[...Array(20)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute w-1 h-1 bg-white/20 rounded-full"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animation: `float ${5 + Math.random() * 10}s ease-in-out infinite`,
+              animationDelay: `${Math.random() * 5}s`
+            }}
           />
-        </div>
+        ))}
       </div>
 
-      {/* Overlay for contrast */}
-      <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/70 to-zinc-900/80 z-[1]" />
-
-      {/* Content */}
-      <div className="relative z-[2] container mx-auto max-w-6xl flex flex-col lg:flex-row items-center gap-16">
-        {/* Left Content */}
-        <div className="flex-1 text-center lg:text-left">
-          <Badge
-            variant="secondary"
-            className="bg-white/10 border border-white/20 text-white mb-6 text-sm font-medium backdrop-blur-md"
-          >
-            Available for new opportunities
-          </Badge>
-
-          <h1 className="font-serif font-bold text-4xl md:text-6xl lg:text-7xl mb-6 leading-tight">
-            Building the <span className="text-white/70">Future</span> of{" "}
-            <span className="text-white">Technology</span>
-          </h1>
-
-          <p className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-            Full Stack Developer specializing in{" "}
-            <span className="text-white font-medium">AI</span> and{" "}
-            <span className="text-white font-medium">Python</span>. Transforming
-            ideas into elegant, high-performing digital experiences.
-          </p>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
-            <Button
-              size="lg"
-              className="text-lg px-8 py-6 bg-white text-black hover:bg-zinc-300 transition-all duration-300"
-            >
-              View My Work
-              <ArrowDown className="ml-2 h-5 w-5" />
-            </Button>
-
-            <a
-              href="/Sheikh Muhammad Ismail Resume.pdf"
-              download
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button
-                variant="outline"
-                size="lg"
-                className="text-lg px-8 py-6 border-white text-black hover:bg-white/10 transition-all duration-300"
-              >
-                Download Resume
-                <ExternalLink className="ml-2 h-5 w-5" />
-              </Button>
-            </a>
-          </div>
-
-          {/* Social Links */}
-          <div className="flex items-center gap-8 justify-center lg:justify-start">
-            <a
-              href="#"
-              className="text-zinc-400 hover:text-white transition-colors"
-              aria-label="GitHub"
-            >
-              <Github className="h-6 w-6" />
-            </a>
-            <a
-              href="#"
-              className="text-zinc-400 hover:text-white transition-colors"
-              aria-label="LinkedIn"
-            >
-              <Linkedin className="h-6 w-6" />
-            </a>
-            <a
-              href="#"
-              className="text-zinc-400 hover:text-white transition-colors"
-              aria-label="Email"
-            >
-              <Mail className="h-6 w-6" />
-            </a>
-          </div>
-        </div>
-
-        {/* Right Visual */}
-        <div className="flex-1 w-full max-w-lg relative">
-          <div className="relative bg-zinc-900/80 border border-zinc-800 rounded-3xl p-6 shadow-2xl backdrop-blur-xl">
-            {/* Status */}
-            <div className="flex items-center gap-3 mb-4 text-sm">
-              <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-              <div className="text-zinc-400 font-mono">Currently coding...</div>
+      {/* Main Content */}
+      <div className={`relative z-10 max-w-7xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left Content */}
+          <div className="space-y-8">
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full backdrop-blur-sm">
+              <Sparkles className="w-4 h-4 text-white" />
+              <span className="text-sm text-white/80 font-medium">Available for Projects</span>
             </div>
 
-            {/* Code Block */}
-            <pre className="bg-black/40 border border-zinc-800 rounded-xl p-4 font-mono text-xs sm:text-sm text-zinc-300 overflow-x-auto">
-{`const developer = {
-  name: 'Sheikh Muhammad Ismail',
-  skills: ['AI', 'Python', 'Web3', 'Next.js'],
-  passion: 'Innovation',
-}`}
-            </pre>
+            {/* Main Heading */}
+            <div className="space-y-4">
+              <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
+                Crafting Digital
+                <span className="block text-white/60">
+                  Experiences
+                </span>
+              </h1>
+              <p className="text-xl text-white/60 max-w-xl leading-relaxed">
+                Full Stack Developer & AI Enthusiast turning complex problems into elegant solutions. 
+                Specialized in building scalable applications with cutting-edge technologies.
+              </p>
+            </div>
 
-            {/* Tech Badges */}
-            <div className="flex flex-wrap gap-2 mt-6">
+            {/* CTA Buttons */}
+            <div className="flex flex-wrap gap-4">
+              <button className="group px-8 py-4 bg-white text-black rounded-full font-semibold hover:bg-white/90 transition-all duration-300 flex items-center gap-2 shadow-lg shadow-white/20">
+                View My Work
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </button>
+              <button className="px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/20 text-white rounded-full font-semibold hover:bg-white/10 transition-all duration-300">
+                Get in Touch
+              </button>
+            </div>
+
+            {/* Social Links */}
+            <div className="flex gap-4 pt-4">
               {[
-                "TypeScript",
-                "React",
-                "Next.js",
-                "Node.js",
-                "Express.js",
-                "Tailwind CSS",
-              ].map((tech) => (
-                <Badge
-                  key={tech}
-                  variant="secondary"
-                  className="bg-white/10 border border-white/10 text-white text-xs"
+                { icon: Github, href: '#', label: 'GitHub' },
+                { icon: Linkedin, href: '#', label: 'LinkedIn' },
+                { icon: Mail, href: '#', label: 'Email' }
+              ].map((social, i) => (
+                <a
+                  key={i}
+                  href={social.href}
+                  aria-label={social.label}
+                  className="w-12 h-12 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 hover:border-white/30 transition-all duration-300"
                 >
-                  {tech}
-                </Badge>
+                  <social.icon className="w-5 h-5" />
+                </a>
               ))}
+            </div>
+          </div>
+
+          {/* Right Content - Interactive Card */}
+          <div className="relative">
+            <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 shadow-2xl">
+              {/* Status Indicator */}
+              <div className="flex items-center gap-3 mb-6">
+                <div className="relative">
+                  <div className="w-3 h-3 bg-white rounded-full animate-pulse" />
+                  <div className="absolute inset-0 w-3 h-3 bg-white rounded-full animate-ping" />
+                </div>
+                <span className="text-white/70 font-mono text-sm">Currently building amazing things...</span>
+              </div>
+
+              {/* Code Preview */}
+              <div className="bg-black/50 rounded-xl p-6 mb-6 border border-white/10">
+                <div className="flex gap-2 mb-4">
+                  <div className="w-3 h-3 bg-white/40 rounded-full" />
+                  <div className="w-3 h-3 bg-white/40 rounded-full" />
+                  <div className="w-3 h-3 bg-white/40 rounded-full" />
+                </div>
+                <pre className="text-sm text-white/80 font-mono overflow-x-auto">
+{`const developer = {
+  name: "Sheikh Muhammad Ismail",
+  role: "Full Stack Developer",
+  expertise: ["AI", "Python", "Web3"],
+  passion: "Innovation ✨",
+  status: "Open to opportunities"
+}`}
+                </pre>
+              </div>
+
+              {/* Skills Grid */}
+              <div className="space-y-3">
+                <div className="flex items-center gap-2 text-white/60 text-sm font-semibold">
+                  <Code2 className="w-4 h-4" />
+                  <span>Tech Stack</span>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {skills.map((skill, i) => (
+                    <span
+                      key={i}
+                      className="px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-white text-sm font-medium hover:bg-white/20 transition-colors cursor-default"
+                      style={{ animationDelay: `${i * 0.1}s` }}
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Stats */}
+              <div className="grid grid-cols-3 gap-4 mt-6 pt-6 border-t border-white/10">
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-white">50+</div>
+                  <div className="text-xs text-white/50">Projects</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-white">5+</div>
+                  <div className="text-xs text-white/50">Years Exp</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-white">100%</div>
+                  <div className="text-xs text-white/50">Satisfaction</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Floating Icons */}
+            <div className="absolute -top-6 -right-6 w-16 h-16 bg-white text-black rounded-2xl flex items-center justify-center shadow-lg shadow-white/20 animate-float">
+              <Rocket className="w-8 h-8" />
             </div>
           </div>
         </div>
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-10 flex justify-center z-[2]">
-        <ArrowDown className="h-6 w-6 text-white animate-bounce" />
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <div className="w-6 h-10 border-2 border-white/20 rounded-full p-1">
+          <div className="w-1.5 h-3 bg-white/60 rounded-full mx-auto animate-scroll" />
+        </div>
       </div>
+
+      <style jsx>{`
+        @keyframes float {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-20px); }
+        }
+        @keyframes scroll {
+          0% { transform: translateY(0); opacity: 0; }
+          50% { opacity: 1; }
+          100% { transform: translateY(12px); opacity: 0; }
+        }
+        .animate-float {
+          animation: float 3s ease-in-out infinite;
+        }
+        .animate-scroll {
+          animation: scroll 2s ease-in-out infinite;
+        }
+      `}</style>
     </section>
   );
 }

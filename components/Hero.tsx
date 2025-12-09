@@ -22,7 +22,7 @@ export default function HeroSection() {
   const skills = ['Python', 'React', 'Next.js', 'Node.js', 'React Native', 'Django', 'GraphQL', 'TypeScript', 'Docker'];
 
   return (
-    <section className="relative min-h-screen bg-black overflow-hidden flex items-center justify-center px-3 sm:px-4 py-12 sm:py-20">
+    <section className="relative min-h-screen bg-black overflow-hidden flex items-center justify-center px-4 sm:px-6 py-16 sm:py-20">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Grid Pattern */}
@@ -59,10 +59,10 @@ export default function HeroSection() {
       </div>
 
       {/* Main Content */}
-      <div className={`relative z-10 max-w-7xl mx-auto transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      <div className={`relative z-10 max-w-7xl mx-auto w-full transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
           {/* Left Content */}
-          <div className="space-y-6 sm:space-y-8">
+          <div className="space-y-5 sm:space-y-8">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-white/5 border border-white/10 rounded-full backdrop-blur-sm">
               <Sparkles className="w-3 sm:w-4 h-3 sm:h-4 text-white" />
@@ -70,21 +70,21 @@ export default function HeroSection() {
             </div>
 
             {/* Main Heading */}
-            <div className="space-y-3 sm:space-y-4">
-              <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-white leading-tight">
+            <div className="space-y-2 sm:space-y-4">
+              <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white leading-tight">
                 Crafting Digital
                 <span className="block text-white/60">
                   Experiences
                 </span>
               </h1>
-              <p className="text-base sm:text-xl text-white/60 max-w-xl leading-relaxed">
+              <p className="text-sm sm:text-xl text-white/60 max-w-xl leading-relaxed">
                 Full Stack Developer & React Native Developer turning complex problems into elegant solutions. 
                 Specialized in building scalable applications with cutting-edge technologies.
               </p>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3">
               <button className="group px-6 sm:px-8 py-3 sm:py-4 bg-white text-black rounded-full font-semibold hover:bg-white/90 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-white/20 text-sm sm:text-base">
                 View My Work
                 <ArrowRight className="w-4 sm:w-5 h-4 sm:h-5 group-hover:translate-x-1 transition-transform" />
@@ -95,7 +95,7 @@ export default function HeroSection() {
             </div>
 
             {/* Social Links */}
-            <div className="flex gap-3 sm:gap-4 pt-2 sm:pt-4">
+            <div className="flex gap-3 pt-2">
               {[
                 { icon: Github, href: '#', label: 'GitHub' },
                 { icon: Linkedin, href: '#', label: 'LinkedIn' },
@@ -105,17 +105,17 @@ export default function HeroSection() {
                   key={i}
                   href={social.href}
                   aria-label={social.label}
-                  className="w-10 sm:w-12 h-10 sm:h-12 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 hover:border-white/30 transition-all duration-300"
+                  className="w-11 sm:w-12 h-11 sm:h-12 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 hover:border-white/30 transition-all duration-300"
                 >
-                  <social.icon className="w-4 sm:w-5 h-4 sm:h-5" />
+                  <social.icon className="w-4.5 sm:w-5 h-4.5 sm:h-5" />
                 </a>
               ))}
             </div>
           </div>
 
           {/* Right Content - Interactive Card */}
-          <div className="relative mt-8 lg:mt-0">
-            <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl sm:rounded-3xl p-4 sm:p-8 shadow-2xl">
+          <div className="relative mt-6 lg:mt-0">
+            <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-2xl">
               {/* Status Indicator */}
               <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
                 <div className="relative">

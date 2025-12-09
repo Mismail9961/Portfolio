@@ -22,7 +22,7 @@ export default function HeroSection() {
   const skills = ['Python', 'React', 'Next.js', 'Node.js', 'React Native', 'Django', 'GraphQL', 'TypeScript', 'Docker'];
 
   return (
-    <section className="relative min-h-screen bg-black overflow-hidden flex items-center justify-center px-3 py-12">
+    <section className="relative min-h-screen bg-black overflow-hidden flex items-center justify-center px-3 py-22">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Grid Pattern */}

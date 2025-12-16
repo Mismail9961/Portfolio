@@ -18,7 +18,7 @@ export default function Portfolio() {
       <Project />
       <ExperienceTimeline/>
       <ContactSection/>
-      {/* Footer */}
+      {/* Footer  */}
       <footer className="py-5 px-6 text-white flex items-center justify-center ">
         <p>&copy; 2025 Full Stack Developer. Sheikh Muhammad Ismail</p>
       </footer>

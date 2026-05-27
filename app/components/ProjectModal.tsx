@@ -10,7 +10,7 @@ interface Project {
   longDescription?: string;
   tech: string[];
   link?: string | null;
-  github: string;
+  github: string | null;
   featured?: boolean;
   features?: string[];
   metrics?: Record<string, string | number>;
@@ -75,9 +75,13 @@ export default function ProjectModal({ isOpen, onClose, project }: ProjectModalP
 
                 {/* Content */}
                 <div className="space-y-6">
+
                   {/* Title */}
                   <div>
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4">{project.title}</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                      {project.title}
+                    </h2>
+
                     <div className="flex flex-wrap gap-2">
                       {project.tech.map((tech: string) => (
                         <span
@@ -120,8 +124,12 @@ export default function ProjectModal({ isOpen, onClose, project }: ProjectModalP
                       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                         {Object.entries(project.metrics).map(([key, value]) => (
                           <div key={key} className="border border-muted p-4">
-                            <div className="text-2xl font-bold text-accent mb-1">{value as string}</div>
-                            <div className="text-sm text-muted capitalize">{key.replace(/([A-Z])/g, ' $1').trim()}</div>
+                            <div className="text-2xl font-bold text-accent mb-1">
+                              {String(value)}
+                            </div>
+                            <div className="text-sm text-muted capitalize">
+                              {key.replace(/([A-Z])/g, ' $1').trim()}
+                            </div>
                           </div>
                         ))}
                       </div>
@@ -130,6 +138,7 @@ export default function ProjectModal({ isOpen, onClose, project }: ProjectModalP
 
                   {/* Links */}
                   <div className="flex gap-4 pt-4">
+
                     {project.link && (
                       <a
                         href={project.link}
@@ -141,16 +150,22 @@ export default function ProjectModal({ isOpen, onClose, project }: ProjectModalP
                         <span>View Live</span>
                       </a>
                     )}
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-center gap-2 px-6 py-3 border border-accent text-accent hover:bg-accent hover:text-background transition-all duration-300"
-                    >
-                      <Github className="w-5 h-5" />
-                      <span>View Code</span>
-                    </a>
+
+                    {/* FIXED: only render if github exists */}
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center gap-2 px-6 py-3 border border-accent text-accent hover:bg-accent hover:text-background transition-all duration-300"
+                      >
+                        <Github className="w-5 h-5" />
+                        <span>View Code</span>
+                      </a>
+                    )}
+
                   </div>
+
                 </div>
               </motion.div>
             </div>

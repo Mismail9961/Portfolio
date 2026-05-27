@@ -111,15 +111,16 @@ export default function Projects() {
                     <span>Live</span>
                   </a>
                 )}
-                <a
-                  href={project.github}
-                  className="flex items-center gap-2 text-accent hover:underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Github className="w-4 h-4" />
-                  <span>Code</span>
-                </a>
+                {project.github && (
+                  <a
+                    href={project.github}
+                    className="flex items-center gap-2 text-accent hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
+                )}
               </div>
 
               <motion.div

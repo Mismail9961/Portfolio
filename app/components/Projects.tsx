@@ -12,7 +12,7 @@ interface Project {
   longDescription?: string;
   tech: string[];
   link?: string | null;
-  github: string;
+  github: string | null;
   featured?: boolean;
   features?: string[];
   metrics?: Record<string, string | number>;

@@ -16,6 +16,7 @@
     "twitter": "https://twitter.com/Mismail9961"
   },
   "seo": {
+    "ogImage": "https://sheikh-muhammad-ismail.vercel.app/og-image.png",
     "siteUrl": "https://sheikh-muhammad-ismail.vercel.app/",
     "siteName": "Sheikh Muhammad Ismail's Portfolio",
     "siteDescription": "Portfolio of Sheikh Muhammad Ismail, a passionate full-stack and native app developer crafting seamless experiences across web and mobile.",

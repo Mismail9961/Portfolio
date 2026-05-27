@@ -10,7 +10,7 @@ interface Education {
   institution: string;
   location: string;
   startDate: string;
-  endDate: string;
+  endDate: string | null;
   description?: string;
   achievements?: string[];
 }

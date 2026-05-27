@@ -1,58 +1,53 @@
 {
   "personal": {
-    "name": "Rui Jin",
-    "title": "Creative Software Engineer",
-    "email": "ruijin.ai.dev@outlook.com",
-    "tagline": "Building AI-powered tools and high-performance digital products",
-    "description": "Software engineer focused on AI, machine learning, full-stack web development, and practical automation systems.",
+    "name": "Sheikh Muhammad Ismail",
+    "title": "Creative Full-Stack & Native App Developer",
+    "email": "sheikhmuhammadismail79@gmail.com",
+    "tagline": "Building high-performance digital products",
+    "description": "focused on full-stack web development, native app development, and building clean, functional digital solutions.",
     "availability": {
       "status": true,
       "message": "Open to freelance work and collaborations"
     }
   },
   "social": {
-    "github": "https://github.com/ruijindev0801",
-    "linkedin": "https://linkedin.com/in/ruijin9981",
-    "twitter": "https://twitter.com/ruijin9981"
+    "github": "https://github.com/Mismail9961",
+    "linkedin": "https://www.linkedin.com/in/sheikh-muhammad-ismail-8b50383a2/"
   },
   "seo": {
-    "siteUrl": "https://yourwebsite.com",
-    "siteName": "Rui Jin's Portfolio",
-    "siteDescription": "Portfolio of Rui Jin, a creative software engineer focused on AI product engineering, full-stack development, automation, and computer vision.",
+    "siteUrl": "https://sheikh-muhammad-ismail.vercel.app/",
+    "siteName": "Sheikh Muhammad Ismail's Portfolio",
+    "siteDescription": "Portfolio of Sheikh Muhammad Ismail, a passionate full-stack and native app developer crafting seamless experiences across web and mobile.",
     "keywords": [
-      "Rui Jin",
-      "Software Engineer",
-      "AI Engineer",
-      "Machine Learning Engineer",
-      "Full Stack Developer",
-      "Creative Developer",
-      "AI Product Engineering",
-      "LLM Integration",
-      "Automation Systems",
-      "Computer Vision",
-      "Prompt Engineering",
+      "Sheikh Muhammad Ismail",
+      "Full-Stack Developer",
+      "Native App Developer",
       "Web Development",
-      "JavaScript",
-      "TypeScript",
-      "Python",
-      "AI Integration",
-      "Cloud Computing",
-      "Artificial Intelligence",
-      "Machine Learning",
-      "Data Visualization",
-      "Scalable Web Applications"
+      "Mobile Development",
+      "React Native",
+      "React",
+      "Next.js",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "MySQL",
+      "PostgreSQL",
+      "SQLite",
+      "Docker",
+      "Kubernetes",
+      "CI/CD",
+      "Agile"
     ],
-    "ogImage": "/og-image.jpg",
-    "twitterHandle": "@ruijin9981",
-    "googleSiteVerification": "your-verification-code"
+    "twitterHandle": "@Mismail9961",
+    "googleSiteVerification": "google-site-verification=q5hKvYx0tWpA2-3005qI7Z69sX753L5Y"
   },
   "skills": [
     {
-      "name": "AI / ML",
+      "name": "React Native",
       "level": 95
     },
     {
-      "name": "AI Integration",
+      "name": "Native App Development",
       "level": 95
     },
     {
@@ -74,91 +69,179 @@
     {
       "name": "SQL / NoSQL",
       "level": 90
-    },
-    {
-      "name": "LLM Workflows and Automation",
-      "level": 85
-    },
-    {
-      "name": "Computer Vision",
-      "level": 85
-    },
-    {
-      "name": "Data Analytics",
-      "level": 85
-    },
-    {
-      "name": "Cloud (AWS / GCP)",
-      "level": 85
-    },
-    {
-      "name": "Data Visualization",
-      "level": 85
-    },
-    {
-      "name": "C#",
-      "level": 85
     }
   ],
   "projects": [
     {
-      "title": "TrashLion SaaS Landing Page",
-      "description": "Responsive, conversion-focused landing page built for a SaaS product with modern UI, clear messaging, and production-ready delivery.",
-      "longDescription": "Built a polished SaaS landing page focused on clarity, responsiveness, and conversion. The project emphasized clean front-end execution, strong user experience, and reliable communication flows.",
-      "tech": ["Next.js", "TailwindCSS", "React", "Resend"],
-      "link": "https://www.trashlion.com/",
-      "github": "https://github.com/Rui0801/trash-lion-app",
+      "title": "Quality Paint Palace E-commerce Website",
+      "description": "A full-stack e-commerce website built with React.js and Node.js/Express, featuring product browsing, cart, order placement, user authentication, and an admin panel to manage orders, users, and products.",
+      "longDescription": "This is a full-stack e-commerce website built with React.js on the frontend and Node.js with Express on the backend. Users can browse products, add items to a cart, and place orders through a smooth and responsive interface. Axios handles all frontend-to-backend API communication. The platform includes user authentication with login and sign-up functionality to ensure secure access.The backend manages product data, order processing, and user accounts through a structured REST API. An admin panel allows administrators to log in, view customer orders, update order statuses, and manage users and products — giving full control over the platform's operations.",
+      "tech": [
+        "React.js",
+        "TailwindCSS",
+        "Node.js",
+        "Express",
+        "Axios",
+        "MongoDB",
+        "Google Cloud Platform"
+      ],
+      "link": "https://www.qualitypaintpalace.store/",
+      "github": "https://github.com/Mismail9961/Quality-Paint-Palace.git",
       "featured": true,
       "features": [
         "Responsive design across desktop and mobile",
-        "Conversion-oriented layout and calls to action",
-        "Email workflow integration with Resend",
-        "Clean, modern UI built for performance and clarity"
+        "Product browsing, cart, and order placement",
+        "User authentication with login and sign-up functionality",
+        "Admin panel to manage orders, users, and products",
+        "Clean, modern UI built for performance and clarity",
+        "Axios for frontend-to-backend API communication"
       ]
     },
     {
-      "title": "Object Detection System",
-      "description": "AI-powered real-time marine object detection from drone footage using computer vision and YOLO-based models.",
-      "longDescription": "Developed a real-time detection system for drone footage that identifies and tracks marine objects using computer vision pipelines, model inference, and monitoring workflows.",
-      "tech": ["Python", "TensorFlow", "OpenCV", "Drone SDK", "YOLO26"],
-      "link": null,
-      "github": "https://github.com/ruijindev0801/Shark_Detection",
+      "title": "7even86GameHub Digital Gaming Marketplace",
+      "description": "A full-stack digital gaming marketplace built with React.js and Node.js/Express, featuring game browsing, wishlists, purchases, user authentication, and an admin panel to manage listings, sales, and reviews.",
+      "longDescription": "This is a full-stack gaming platform built with React.js on the frontend and Node.js with Express on the backend. Users can browse games, view detailed game information, add titles to their wishlist, and purchase games through a sleek and immersive interface. Axios handles all frontend-to-backend API communication efficiently.The platform includes secure user authentication with login and sign-up functionality, ensuring safe access for all players. The backend manages the game catalog, transaction processing, and user profiles through a structured REST API. An admin panel gives administrators full control — they can manage game listings, track sales analytics, update game details, and moderate user reviews, keeping the platform organized and up to date.",
+      "tech": [
+        "React.js",
+        "TailwindCSS",
+        "Node.js",
+        "Express",
+        "Axios",
+        "MongoDB",
+        "Google Cloud Platform"
+      ],
+      "link": "https://www.7even86gamehub.pk/",
+      "github": "https://github.com/Mismail9961/7even86gamehub.pk.git",
       "featured": true,
       "features": [
-        "Real-time object detection and tracking",
-        "High-accuracy computer vision pipeline",
-        "Drone integration for live capture workflows",
-        "Monitoring interface for operational visibility"
+        "Product browsing, wishlist, and purchase functionality",
+        "User authentication with login and sign-up functionality",
+        "Admin panel to manage listings, sales, and reviews",
+        "Clean, modern UI built for performance and clarity",
+        "Axios for frontend-to-backend API communication"
       ]
     },
     {
-      "title": "Photo Protection System",
-      "description": "AI-based protection system for Instagram photos using image recognition and watermarking techniques.",
-      "longDescription": "Created a protection workflow for visual content that detects unauthorized use, applies watermark strategies, and helps manage image ownership through an accessible dashboard experience.",
-      "tech": ["Python", "TensorFlow", "OpenCV", "Instagram API"],
-      "link": null,
-      "github": "https://github.com/ruijindev0801/Photoshield_2026",
+      "title": "MediaForgeSolutions Digital Marketing Agency Website",
+      "description": "A modern Digital Marketing Agency website showcasing services like SEO, social media management, content marketing, branding, and paid advertising — built for a professional and engaging user experience. ",
+      "longDescription": "MediaForgeSolutions is a sleek and responsive Digital Marketing Agency website built to help businesses grow their online presence. The platform clearly presents the agency's core services including SEO optimization, social media management, content marketing, branding, and paid advertising campaigns.The website is designed with a professional user experience in mind, featuring clear navigation, detailed service pages, case studies, and contact forms that guide visitors toward becoming clients. Its engaging layout and fast performance reflect the agency's own commitment to quality and results-driven marketing.MediaForgeSolutions serves as both a portfolio and a lead generation tool — effectively communicating the agency's expertise while delivering an experience that mirrors the impactful strategies it offers to clients.",
+      "tech": [
+        "Next.js",
+        "TailwindCSS",
+        "Node.js",
+        "Express",
+        "Axios",
+        "MongoDB",
+        "Google Cloud Platform"
+      ],
+      "link": "https://www.mediaforgesolutions.site/",
+      "github": null,
       "featured": true,
       "features": [
-        "Detection of unauthorized image use",
-        "Watermark-based content protection",
-        "Instagram-related workflow integration",
-        "Dashboard for managing protected assets"
+        "Sleek, modern design that reflects the agency's brand and marketing expertise.",
+        "Optimized for speed to ensure a seamless browsing experience.",
+        "Intuitive structure that guides users smoothly through the website.",
+        "Fully optimized layout for all screen sizes and devices.",
+        "Strategically placed forms to convert website visitors into leads."
       ]
     },
     {
-      "title": "GitHub Scraping Tool",
-      "description": "Real-time GitHub data scraper with interactive dashboards for analysis and reporting.",
-      "longDescription": "Built a data collection and reporting tool that scrapes GitHub activity in real time and presents it through dashboards designed for exploration, insights, and operational visibility.",
-      "tech": ["Python", "CustomTkinter", "GitHub API"],
-      "link": null,
-      "github": "https://github.com/ruijindev0801/Github_Scraper_2026",
+      "title": "Sachchu Store – E-commerce Platform Development",
+      "description": "A full-stack e-commerce platform built with React.js and Node.js/Express, featuring product browsing, cart, order placement, user authentication, and an admin panel to manage orders, users, and products.",
+      "longDescription": "This is a full-stack e-commerce platform built with React.js on the frontend and Node.js with Express on the backend. Users can browse products, add items to a cart, and place orders through a smooth and responsive interface. Axios handles all frontend-to-backend API communication. The platform includes user authentication with login and sign-up functionality to ensure secure access.The backend manages product data, order processing, and user accounts through a structured REST API. An admin panel allows administrators to log in, view customer orders, update order statuses, and manage users and products — giving full control over the platform's operations.",
+      "tech": [
+        "Next.js",
+        "TailwindCSS",
+        "Node.js",
+        "Express",
+        "Axios",
+        "MongoDB",
+        "Google Cloud Platform"
+      ],
+      "link": "https://www.sachchu.store/",
+      "github": "https://github.com/Mismail9961/Sachchu-Store.git",
       "featured": true,
       "features": [
-        "Real-time GitHub data collection",
-        "Interactive dashboards for insights",
-        "Desktop UI built with CustomTkinter",
-        "API-based reporting workflow"
+        "Product browsing, cart, and order placement",
+        "User authentication with login and sign-up functionality",
+        "Admin panel to manage orders, users, and products",
+        "Clean, modern UI built for performance and clarity",
+        "Axios for frontend-to-backend API communication"
+      ]
+    },
+    {
+      "title": "Today Trending Now – WordPress Website Development",
+      "description": "Developed a WordPress-based news and trending content website for Today Trending Now. Built a structured and content-focused platform designed to publish and manage trending articles efficiently.",
+      "longDescription": "Developed a WordPress-based news and trending content website for Today Trending Now. Built a structured and content-focused platform designed to publish and manage trending articles efficiently. Focused on clean layout design, fast loading performance, and easy content management for regular updates. Implemented SEO-friendly structure to improve search visibility and organic traffic growth.",
+      "tech": [
+        "SEO Plugins (Yoast/Rank Math)",
+        "WordPress",
+        "Performance Optimization Plugins"
+      ],
+      "link": "https://todaytrendingnow.com/",
+      "github": null,
+      "featured": true,
+      "features": [
+        "News article browsing with category and search functionality",
+        "User authentication with login, registration, and profile management",
+        "Admin dashboard to manage posts, categories, media, and users",
+        "Responsive, modern UI optimized for readability and fast loading",
+        "WordPress CMS integration with dynamic content management"
+      ]
+    },
+    {
+      "title": "PixelNimbus",
+      "description": "This project is an AI-powered Image and Video Optimization Platform designed to help users enhance their media content for faster performance and better engagement. ",
+      "longDescription": "This project is an AI-powered Image and Video Optimization Platform designed to help users enhance their media content for faster performance and better engagement. Built with a modern frontend and robust backend, the platform allows users to upload images and videos, where the system automatically applies compression, resizing, and format conversion without compromising quality. Leveraging AI-based suggestions, it provides recommendations for ideal resolutions, aspect ratios, color enhancements, and thumbnail generation to optimize media for different platforms (web, mobile, and social media).",
+      "tech": [
+        "Next.js",
+        "TailwindCSS",
+        "Node.js",
+        "Express",
+        "Axios",
+        "MongoDB",
+        "Google Cloud Platform"
+      ],
+      "link": "https://pixelnimbus.vercel.app/",
+      "github": "https://github.com/Mismail9961/PixelNimbus-SAAS-App",
+      "featured": true,
+      "features": [
+        "AI-powered image and video optimization with intelligent enhancement suggestions",
+        "Media upload system with automatic compression, resizing, and format conversion",
+        "Smart recommendations for resolutions, aspect ratios, color improvements, and thumbnails",
+        "Fast, responsive UI built for seamless media processing and user experience",
+        "Scalable frontend and backend architecture optimized for web, mobile, and social media delivery"
+      ]
+    },
+    {
+      "title": "Askly",
+      "description": "A full-stack AI-powered search engine that delivers Perplexity-style answers by combining live web search, AI reasoning, citations, images, and chat history.",
+      "longDescription": "Askly is an AI-powered search application built to deliver a modern answer engine experience similar to Perplexity AI. Users can ask natural language questions and receive clear, AI-generated responses enriched with citations, web sources, and relevant images. The platform performs real-time web searches using Tavily API, processes results through Groq's Llama 3 model, and generates concise, source-backed answers. Built with a scalable full-stack architecture, Askly includes authentication, persistent chat history, media-rich responses, and cloud deployment for a seamless search experience across devices.",
+      "tech": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "TailwindCSS",
+        "shadcn/ui",
+        "Node.js",
+        "Express",
+        "Bun",
+        "Supabase",
+        "Supabase Auth",
+        "Tavily API",
+        "Groq (Llama 3)",
+        "Vercel",
+        "Railway"
+      ],
+      "link": "https://perplexity-pi.vercel.app/",
+      "github": "https://github.com/Mismail9961/Perplexity",
+      "featured": true,
+      "features": [
+        "AI-powered web search that retrieves real-time information with source citations",
+        "Natural language question answering using Groq Llama 3 for fast and accurate responses",
+        "Integrated search results with images, references, and structured answer generation",
+        "Secure authentication and persistent chat history powered by Supabase",
+        "Modern, responsive interface optimized for fast search and seamless user experience"
       ]
     }
   ],
@@ -168,7 +251,7 @@
       "role": "CEO",
       "company": "Nexora Systems",
       "avatar": "SL",
-      "content": "Rui is an exceptional developer who consistently delivers high-quality work. His attention to detail and creativity are unmatched.",
+      "content": "Ismail is an exceptional developer who consistently delivers high-quality work. His attention to detail and creativity are unmatched.",
       "rating": 5
     },
     {
@@ -176,7 +259,7 @@
       "role": "Product Manager",
       "company": "BlueCircuit Technologies",
       "avatar": "RP",
-      "content": "Working with Rui was a fantastic experience. He brought our vision to life with his technical expertise and innovative approach.",
+      "content": "Working with Ismail was a fantastic experience. He brought our vision to life with his technical expertise and innovative approach.",
       "rating": 5
     },
     {
@@ -184,163 +267,219 @@
       "role": "CTO",
       "company": "Altabyte Labs",
       "avatar": "TS",
-      "content": "Rui's ability to solve complex problems and deliver results on time is truly impressive. He is a valuable asset to any team.",
+      "content": "Ismail's ability to solve complex problems and deliver results on time is truly impressive. He is a valuable asset to any team.",
+      "rating": 5
+    },
+    {
+      "name": "Hassan Khan",
+      "role": "Founder & CEO",
+      "company": "Nexagon Agency",
+      "avatar": "HK",
+      "content": "Delivered high-quality work with strong attention to detail and excellent execution. Reliable, efficient, and consistently exceeded expectations.",
+      "rating": 5
+    },
+    {
+      "name": "Waqas Ahmed",
+      "role": "Director",
+      "company": "Core4Technologies Pty LTD",
+      "avatar": "WA",
+      "content": "Professional, technically strong, and easy to work with. Successfully transformed requirements into a polished and scalable solution.",
+      "rating": 5
+    },
+    {
+      "name": "Reeb",
+      "role": "Founder",
+      "company": "TodayTrending",
+      "avatar": "RB",
+      "content": "Exceptional development quality and smooth communication throughout the project. Delivered a modern product with great performance and user experience.",
       "rating": 5
     }
   ],
   "experience": [
     {
-      "title": "AI/ML Engineer",
-      "company": "Self-Employed",
-      "location": "USA",
+      "title": "Full-Stack Developer",
+      "company": "Nexagen Agency",
+      "location": "UK",
       "workType": "Remote",
-      "startDate": "2025-03",
+      "startDate": "2026-01",
       "endDate": null,
       "current": true,
       "description": "Building production-focused AI solutions, automation systems, and full-stack products for practical business use cases.",
       "achievements": [
         "Built AI-powered applications and internal tools for real-world workflows",
-        "Integrated machine learning and automation into business-facing products",
         "Delivered solutions with a focus on reliability, usability, and measurable value"
       ],
-      "technologies": ["Python", "OpenAI", "LangChain", "FastAPI", "AWS"]
+      "technologies": [
+        "JavaScript",
+        "OpenAI",
+        "React",
+        "FastAPI",
+        "Node.js",
+        "Express"
+      ]
     },
     {
-      "title": "Prompt Engineer",
-      "company": "Outlier.ai",
-      "location": "USA",
-      "workType": "Remote",
-      "startDate": "2022-07",
+      "title": "Full-Stack Developer",
+      "company": "Core4Technologies Pty LTD",
+      "location": "Pakistan",
+      "workType": "IN-PERSON",
+      "startDate": "2025-01",
       "endDate": "2026-01",
-      "current": false,
-      "description": "Designed and optimized prompt workflows for AI systems, improving response quality, accuracy, and product usefulness.",
+      "current": true,
+      "description": "Worked as a Full-Stack and React Native Developer, building scalable web and mobile applications using modern technologies, with a focus on performance, usability, and clean architecture across platforms.",
       "achievements": [
-        "Improved model output quality through structured prompt design and evaluation",
-        "Collaborated on AI-focused workflows and research-aligned problem solving",
-        "Contributed to production-facing prompt engineering efforts at scale"
+        "Developed full-stack web applications using React, Node.js, Express, and MongoDB with secure RESTful APIs and optimized backend logic",
+        "Built cross-platform mobile applications using React Native with reusable components and consistent UI/UX across Android and iOS",
+        "Integrated backend services and third-party APIs to enable real-time data flow and seamless user experiences across web and mobile platforms"
       ],
-      "technologies": ["Python", "LLMs", "Prompt Engineering", "NLP", "Cloud Computing"]
+      "technologies": [
+        "JavaScript",
+        "OpenAI",
+        "React",
+        "FastAPI",
+        "Node.js",
+        "Express",
+        "React Native",
+        "MongoDB",
+        "Git",
+        "Docker",
+        "Kubernetes"
+      ]
     },
     {
-      "title": "Freelance Software Developer",
-      "company": "Upwork",
-      "location": "USA",
-      "workType": "Remote",
-      "startDate": "2020-06",
-      "endDate": "2022-12",
+      "title": "Intern Frontend Developer",
+      "company": "GFXMansion",
+      "location": "Pakistan",
+      "workType": "IN-PERSON",
+      "startDate": "2023-09",
+      "endDate": "2024-11",
       "current": false,
-      "description": "Delivered web development, automation, and AI integration solutions for a range of client projects.",
+      "description": "Worked as a Frontend Developer focused on building modern, responsive, and high-performance web interfaces using React and UI-focused technologies, ensuring clean design systems and optimal user experience.",
       "achievements": [
-        "Completed 20+ projects with 5-star ratings",
-        "Built custom web applications and business-focused automation workflows",
-        "Specialized in practical AI-driven product features and integrations"
+        "Developed responsive and reusable UI components using React, improving consistency across web applications",
+        "Translated UI/UX designs into pixel-perfect, mobile-first interfaces with strong attention to detail",
+        "Optimized frontend performance by improving load times, reducing re-renders, and implementing best practices"
       ],
-      "technologies": ["JavaScript", "TypeScript", "Python", "React", "AI/ML"]
+      "technologies": [
+        "JavaScript",
+        "React",
+        "HTML",
+        "CSS",
+        "Tailwind CSS",
+        "Git",
+        "Figma",
+        "REST APIs"
+      ]
+    },
+    {
+      "title": "Junior MERN-Stack Developer",
+      "company": "Codex",
+      "location": "UK",
+      "workType": "Internship",
+      "startDate": "2024-11",
+      "endDate": "2025-04",
+      "current": false,
+      "description": "Developed and maintained full-stack web applications using the MERN stack (MongoDB, Express.js, React, Node.js), focusing on performance, scalability, and clean architecture.",
+      "achievements": [
+        "Built and deployed responsive full-stack applications with RESTful APIs and dynamic React frontends",
+        "Designed and implemented secure backend services using Node.js and Express.js with MongoDB integration",
+        "Improved application performance and code quality through optimization, refactoring, and best development practices"
+      ],
+      "technologies": [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Cloud Computing",
+        "Git",
+        "Docker",
+        "Kubernetes"
+      ]
+    },
+    {
+      "title": "Freelance Full-Stack Developer",
+      "company": "Upwork (Referral-Based Projects)",
+      "location": "Pakistan",
+      "workType": "Remote",
+      "startDate": "2022-06",
+      "endDate": null,
+      "current": true,
+      "description": "Worked as a Freelance Full-Stack Developer delivering client projects through referrals, focusing on building scalable web applications, custom solutions, and AI-integrated features tailored to business needs.",
+      "achievements": [
+        "Delivered multiple client projects through referrals with strong focus on quality and requirement-driven development",
+        "Built custom web applications and automation systems based on real business needs and workflows",
+        "Implemented AI-powered features and integrations to enhance product functionality and user experience"
+      ],
+      "technologies": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "React",
+        "Node.js",
+        "AI Integration",
+        "MongoDB",
+        "REST APIs"
+      ]
     },
     {
       "title": "Volunteer Web Developer",
       "company": "Non-Profit Organization",
       "location": "Hong Kong",
       "workType": "Remote",
-      "startDate": "2019-09",
-      "endDate": "2020-05",
+      "startDate": "2022-01",
+      "endDate": "2022-09",
       "current": false,
       "description": "Developed and maintained websites for a non-profit organization.",
       "achievements": [
         "Improved website performance by 30%",
         "Enhanced user experience with responsive design"
       ],
-      "technologies": ["React", "Flask", "Python", "Git"]
-    },
-    {
-      "title": "Intern Software Engineer",
-      "company": "Tech Startup",
-      "location": "Hong Kong",
-      "workType": "Hybrid",
-      "startDate": "2018-06",
-      "endDate": "2019-08",
-      "current": false,
-      "description": "Assisted in developing and testing web applications.",
-      "achievements": [
-        "Gained hands-on experience with modern development tools",
-        "Collaborated with senior developers to deliver quality code"
-      ],
-      "technologies": ["HTML", "CSS", "JavaScript"]
+      "technologies": [
+        "React",
+        "Node.js",
+        "Python",
+        "Django",
+        "Git"
+      ]
     }
   ],
   "education": [
     {
-      "degree": "Bachelor of Computer Science",
-      "institution": "City University of Hong Kong",
-      "location": "Hong Kong",
-      "startDate": "2016-05",
-      "endDate": "2020-01",
-      "current": false,
-      "description": "Studied core computer science concepts and specialized in software development and AI.",
+      "degree": "Bachelor of Cloud Computing",
+      "institution": "Sir Syed University of Engineering and Technology",
+      "location": "Pakistan",
+      "startDate": "2025-11",
+      "endDate": null,
+      "current": true,
+      "description": "Currently pursuing a Bachelor of Cloud Computing with a focus on software development, cloud technologies, and AI-driven applications.",
       "achievements": [
-        "Graduated with honors",
-        "Completed a thesis on AI-driven web applications",
-        "Active member of the Computer Science Club"
+        "Completed foundational coursework in computer science and cloud computing fundamentals",
+        "Gained hands-on experience in software development, web technologies, and AI-based systems",
+        "Actively participating in academic projects and technical skill development activities"
       ]
-    }
-  ],
-  "certifications": [
-    {
-      "name": "AWS Certified Developer",
-      "issuer": "Amazon Web Services",
-      "date": "2023-06",
-      "credentialId": "AWSD-9K4M-2P7X",
-      "url": "https://www.credly.com/badges/aws-certified-developer-associate"
-    },
-    {
-      "name": "Meta Front-End Developer",
-      "issuer": "Meta",
-      "date": "2022-12",
-      "credentialId": "META-FE-8T2R-5LQ1",
-      "url": "https://www.coursera.org/professional-certificates/meta-front-end-developer"
-    },
-    {
-      "name": "AI Engineer Professional Certificate",
-      "issuer": "IBM",
-      "date": "2024-03",
-      "credentialId": "IBM-AIE-4N6V-1ZP3",
-      "url": "https://www.coursera.org/professional-certificates/ibm-ai-engineer"
-    },
-    {
-      "name": "Google Cloud Professional Data Engineer",
-      "issuer": "Google Cloud",
-      "date": "2023-09",
-      "credentialId": "GCP-DE-7X5Y-3W8Z",
-      "url": "https://www.credly.com/badges/google-cloud-professional-data-engineer"
-    },
-    {
-      "name": "Certified Kubernetes Application Developer (CKAD)",
-      "issuer": "Cloud Native Computing Foundation",
-      "date": "2024-01",
-      "credentialId": "CKAD-9M3L-2Q7X",
-      "url": "https://www.cncf.io/certification/ckad/"
     }
   ],
   "services": [
     {
-      "title": "AI Product Engineering",
-      "description": "Building AI-powered applications, internal tools, and user-facing products with practical real-world value.",
-      "icon": "Cpu"
-    },
-    {
-      "title": "LLM Integration and Automation",
-      "description": "Designing prompt workflows, agent systems, and business automation powered by modern language models.",
-      "icon": "Zap"
-    },
-    {
       "title": "Full-Stack Web Development",
-      "description": "Developing scalable web platforms with strong UX, clean architecture, and reliable backend systems.",
+      "description": "Building scalable and high-performance web applications using modern frontend and backend technologies with clean architecture and best practices.",
       "icon": "Code2"
     },
     {
-      "title": "Computer Vision Solutions",
-      "description": "Creating vision-based systems for detection, monitoring, classification, and intelligent image workflows.",
-      "icon": "Eye"
+      "title": "React Native App Development",
+      "description": "Developing cross-platform mobile applications for iOS and Android with smooth performance, responsive UI, and native-like user experience.",
+      "icon": "Smartphone"
+    },
+    {
+      "title": "API Development & Integration",
+      "description": "Designing and building secure RESTful APIs and integrating third-party services for seamless application functionality.",
+      "icon": "Webhook"
+    },
+    {
+      "title": "Database & Backend Systems",
+      "description": "Creating optimized database structures and robust backend systems for fast, reliable, and scalable applications.",
+      "icon": "Database"
     }
   ],
   "stats": [
@@ -355,7 +494,7 @@
       "suffix": "+"
     },
     {
-      "value": 5,
+      "value": 3,
       "label": "Years Experience",
       "suffix": "+"
     },
@@ -366,17 +505,17 @@
     }
   ],
   "contact": {
-    "email": "ruijin.ai.dev@outlook.com",
+    "email": "sheikhmuhammadismail79@gmail.com",
     "phone": null,
-    "location": "Hong Kong",
-    "availability": "Monday to Friday, 9AM - 6PM (CST)",
+    "location": "Pakistan",
+    "availability": "Monday to Friday, 7PM - 4AM (PKT)",
     "responseTime": "Within 24 hours"
   },
   "files": {
-    "cv": "/Rui_Jin_Resume.docx"
+    "cv": "public/Sheikh Muhammad Ismail Resume.pdf"
   },
   "about": [
-    "I am a software engineer with a strong foundation in AI, machine learning, and modern web development. I build products that balance technical reliability, performance, and thoughtful user experience.",
-    "My work spans full-stack applications, automation systems, AI integrations, and interactive front-end experiences. I am especially interested in practical LLM systems, production-ready ML workflows, and scalable cloud-based solutions."
+    "I am a Full Stack and React Native Developer focused on building scalable, high-performance web and mobile applications with clean architecture and strong user experience.",
+    "My work includes developing end-to-end applications, mobile apps, APIs, and backend systems using modern technologies. I enjoy turning complex problems into simple, efficient, and production-ready solutions."
   ]
 }

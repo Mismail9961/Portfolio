@@ -28,13 +28,12 @@ export default function Home() {
       <SectionIndicator />
       <main>
         <Hero />
-        <ParallaxText text="ENGINEER • DEVELOPER • ENTHUSIAST • COFFEE LOVER • " baseVelocity={1} />
+        <ParallaxText text="ENGINEER • FULL-STACK DEVELOPER • REACT NATIVE BUILDER • PROBLEM SOLVER" baseVelocity={1} />
         <About />
         <Skills />
         <StatsCounter />
         <Experience />
         <Education />
-        <Certifications />
         <ParallaxText text="PORTFOLIO • PROJECTS • WORK •" baseVelocity={-1} />
         <Projects />
         <Testimonials />

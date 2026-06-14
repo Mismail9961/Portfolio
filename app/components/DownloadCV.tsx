@@ -7,9 +7,12 @@ import settings from '@/settings.json';
 export default function DownloadCV() {
   const handleDownload = () => {
     const cvUrl = settings.files.cv;
+
     const link = document.createElement('a');
     link.href = cvUrl;
-    link.download = 'Rui_Jin_Resume.docx';
+
+    link.download = 'Sheikh_Muhammad_Ismail_Resume.pdf';
+
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

@@ -513,9 +513,9 @@
     "availability": "Monday to Friday, 7PM - 4AM (PKT)",
     "responseTime": "Within 24 hours"
   },
-  "files": {
-    "cv": "public/Sheikh Muhammad Ismail Resume.pdf"
-  },
+"files": {
+  "cv": "/Sheikh_Muhammad_Ismail_Resume.pdf"
+},
   "about": [
     "I am a Full Stack and React Native Developer focused on building scalable, high-performance web and mobile applications with clean architecture and strong user experience.",
     "My work includes developing end-to-end applications, mobile apps, APIs, and backend systems using modern technologies. I enjoy turning complex problems into simple, efficient, and production-ready solutions."

@@ -325,9 +325,9 @@
       "company": "Core4Technologies Pty LTD",
       "location": "Pakistan",
       "workType": "IN-PERSON",
-      "startDate": "2025-01",
+      "startDate": "2024-04",
       "endDate": "2026-01",
-      "current": true,
+      "current": false,
       "description": "Worked as a Full-Stack and React Native Developer, building scalable web and mobile applications using modern technologies, with a focus on performance, usability, and clean architecture across platforms.",
       "achievements": [
         "Developed full-stack web applications using React, Node.js, Express, and MongoDB with secure RESTful APIs and optimized backend logic",

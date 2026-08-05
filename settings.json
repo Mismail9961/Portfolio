@@ -245,6 +245,30 @@
         "Secure authentication and persistent chat history powered by Supabase",
         "Modern, responsive interface optimized for fast search and seamless user experience"
       ]
+    },
+    {
+      "title": "PrimeLubeTech",
+      "description": "A modern lubricant product showcase and survey platform for cars and motorcycles, designed to help customers explore products and submit inquiries through a seamless online experience.",
+      "longDescription": "PrimeLubeTech is a responsive lubricant product showcase and survey website built for the automotive industry. The platform enables users to browse a wide range of car and motorcycle lubricants with detailed product specifications, applications, viscosity grades, and performance benefits. It also features an interactive survey and inquiry form that collects customer requirements and delivers submissions directly via Google SMTP email notifications. Built with Next.js and a modern UI, the website focuses on performance, SEO, and an intuitive user experience across desktop and mobile devices.",
+      "tech": [
+        "Next.js",
+        "TailwindCSS",
+        "Node.js",
+        "Google SMTP",
+        "React",
+        "TypeScript",
+        "Vercel"
+      ],
+      "link": "https://www.primelubetech.com/",
+      "github": "https://github.com/Mismail9961/Portfolio",
+      "featured": true,
+      "features": [
+        "Comprehensive catalog of car and motorcycle lubricant products with detailed specifications",
+        "Interactive customer survey and inquiry forms with secure Google SMTP email delivery",
+        "Responsive, SEO-optimized interface for fast browsing across desktop and mobile devices",
+        "Organized product pages showcasing applications, viscosity grades, and performance benefits",
+        "Modern Next.js architecture with optimized performance and scalable deployment on Vercel"
+      ]
     }
   ],
   "testimonials": [
@@ -437,13 +461,7 @@
         "Improved website performance by 30%",
         "Enhanced user experience with responsive design"
       ],
-      "technologies": [
-        "React",
-        "Node.js",
-        "Python",
-        "Django",
-        "Git"
-      ]
+      "technologies": ["React", "Node.js", "Python", "Django", "Git"]
     }
   ],
   "education": [
@@ -513,9 +531,9 @@
     "availability": "Monday to Friday, 7PM - 4AM (PKT)",
     "responseTime": "Within 24 hours"
   },
-"files": {
-  "cv": "/Sheikh_Muhammad_Ismail_Resume.pdf"
-},
+  "files": {
+    "cv": "/Sheikh_Muhammad_Ismail_Resume.pdf"
+  },
   "about": [
     "I am a Full Stack and React Native Developer focused on building scalable, high-performance web and mobile applications with clean architecture and strong user experience.",
     "My work includes developing end-to-end applications, mobile apps, APIs, and backend systems using modern technologies. I enjoy turning complex problems into simple, efficient, and production-ready solutions."
